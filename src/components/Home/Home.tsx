@@ -45,7 +45,8 @@ const Home = () => {
     },
     desktop: {
       breakpoint: { max: 3000, min: 1024 },
-      items: 1,
+
+      items: 3,
     },
     tablet: {
       breakpoint: { max: 1024, min: 464 },
@@ -174,7 +175,7 @@ const Home = () => {
           responsive={responsive}
           swipeable={true}
           draggable={true}
-          slidesToSlide={1}
+          // slidesToSlide={3}
           showDots={true}
           ssr={true}
           infinite={true}
@@ -183,7 +184,7 @@ const Home = () => {
           rewind={true}
           renderDotsOutside={true}
           keyBoardControl={false}
-          centerMode={true}
+          centerMode={false}
           removeArrowOnDeviceType={['tablet', 'mobile']}
           dotListClass='custom-dot-list-style'>
           {home_carousel.map((item, index) => (
