@@ -9,9 +9,12 @@
     "@types/jest": "^26.0.24",
     "@types/node": "^15.14.9",
     "@types/react": "^17.0.52",
-    "@types/react-dom": "^17.0.18",
+    "bootstrap": "^5.2.3",
     "react": "^18.2.0",
+    "react-bootstrap": "^2.7.0",
     "react-dom": "^18.2.0",
+    "react-multi-carousel": "^2.8.2",
+    "react-odometerjs": "^3.1.0",
     "react-particles": "^2.6.0",
     "react-scripts": "5.0.1",
     "tslib": "^2.4.1",
@@ -40,5 +43,8 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "@types/react-dom": "^18.0.9"
   }
 }

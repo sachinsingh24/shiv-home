@@ -1,0 +1,9 @@
+/** @format */
+
+.navbar {
+  position: absolute;
+  width: 100%;
+  z-index: 1;
+  font-family: 'Poppins' !important;
+  font-weight: 500;
+}

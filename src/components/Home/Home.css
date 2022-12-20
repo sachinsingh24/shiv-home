@@ -1,0 +1,277 @@
+/** @format */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;1,300&display=swap');
+
+.banner-sec img {
+  position: relative;
+  text-align: center;
+  height: 100vh !important;
+  width: 98.75vw;
+}
+.banner-tag {
+  position: absolute;
+  bottom: 0px;
+  top: 20%;
+  right: 5%;
+  /* text-align: center; */
+  font-family: 'Poppins';
+}
+
+.tag-button {
+  width: 200px;
+  font-size: 20px;
+  font-weight: 600;
+  color: #fff;
+  cursor: pointer;
+  /* margin: 20px; */
+  height: 55px;
+  text-align: center;
+  border: none;
+  background-size: 300% 100%;
+  background-image: linear-gradient(
+    to right,
+    #25aae1,
+    #40e495,
+    #30dd8a,
+    #2bb673
+  );
+  box-shadow: 0 4px 15px 0 rgba(49, 196, 190, 0.75);
+  border-radius: 50px;
+  moz-transition: all 0.4s ease-in-out;
+  -o-transition: all 0.4s ease-in-out;
+  -webkit-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
+}
+
+.tag-button:hover {
+  background-position: 100% 0;
+  moz-transition: all 0.4s ease-in-out;
+  -o-transition: all 0.4s ease-in-out;
+  -webkit-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
+}
+
+.tag-button:focus {
+  outline: none;
+}
+.funfacts-inner {
+  text-align: center;
+}
+.single-funfacts {
+  color: #fff;
+}
+.funfacts-style-two h3 {
+  font-size: 2rem;
+  font-weight: 900;
+  vertical-align: middle;
+}
+
+.banner-sec1 {
+  width: 100%;
+  height: auto;
+}
+.banner-sec1 {
+  position: relative;
+}
+.Shiv_tag {
+  position: absolute;
+  bottom: 20%;
+  right: 6.5%;
+  color: #fff;
+  font-family: 'Poppins';
+  font-size: 25px;
+  font-weight: 700;
+  text-align: left;
+}
+.shiv_logo {
+  position: absolute;
+  top: 22%;
+  right: 5%;
+  height: auto;
+  width: 350px !important;
+}
+.shiv-btn {
+  position: absolute;
+  bottom: 10%;
+  right: 12%;
+  box-shadow: 0 4px 15px 0 rgba(42, 158, 171, 1);
+  background-image: linear-gradient(
+    to right,
+    #f29b3e,
+    #35c1d1,
+    #3fb2bf,
+    #54cfdd
+  );
+}
+
+/*start fade animation */
+.animated {
+  -webkit-animation-duration: 2s;
+  animation-duration: 2s;
+}
+.animated img {
+  -webkit-animation-duration: 5s;
+  animation-duration: 5s;
+}
+.animated h2 {
+  -webkit-animation-duration: 2s;
+  animation-duration: 2s;
+}
+.animated button {
+  -webkit-animation-duration: 3s;
+  animation-duration: 3s;
+}
+
+@-webkit-keyframes fadeInLeft {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateX(-20px);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateX(0);
+  }
+}
+
+@keyframes fadeInLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(-200px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.fadeInLeft,
+img,
+h2,
+button {
+  -webkit-animation-name: fadeInLeft;
+  animation-name: fadeInLeft;
+}
+/* end fade animation */
+
+/* start owl carousel */
+.carousel {
+  /* border-image: linear-gradient(
+    #25aae1,
+    #29b974,
+    #1ac974,
+    aquamarine
+  )30;
+  border-style:solid;
+  border-width:10px ;
+  border-radius: 15px !important; */
+  background: linear-gradient(rgb(228, 243, 250), transparent) padding-box,
+    linear-gradient(to bottom, #039fe2, #239fc5, #55b7cf, aquamarine) border-box;
+  border-radius: 15px;
+  border: 10px solid transparent;
+  padding: 1px;
+}
+.head-title {
+  color: #fff;
+}
+
+.react-multi-carousel-track .react-multi-carousel-item {
+  transition: all 0.3s ease-in-out;
+  margin-bottom: 20px;
+}
+
+.react-multi-carousel-track .react-multi-carousel-item .card {
+  padding: 20px;
+  position: relative;
+}
+
+.react-multi-carousel-track .react-multi-carousel-item img {
+  height: 350px;
+  object-fit: cover;
+  border-radius: 6px;
+  width: 100%;
+}
+
+.react-multi-carousel-track .react-multi-carousel-item .card .name {
+  position: absolute;
+  bottom: -20px;
+  left: 20%;
+  right: 20%;
+  text-align: center;
+  color: #101c81;
+  font-size: 1.5rem;
+  font-weight: 600;
+  background-color: aquamarine;
+  padding: 0.3rem 0.4rem;
+  border-radius: 5px;
+  box-shadow: 2px 3px 15px #3c405a;
+}
+
+.react-multi-carousel-track .react-multi-carousel-item .card {
+  opacity: 0.2;
+  transform: scale3d(0.8, 0.8, 0.8);
+  transition: all 0.3s ease-in-out;
+}
+.react-multi-carousel-track .react-multi-carousel-item--active .card {
+  opacity: 1 !important;
+  transform: scale3d(1, 1);
+}
+
+.react-multi-carousel-list .custom-dot-list-style {
+  /* display: inline-block; */
+  width: 100%;
+  text-align: center;
+}
+.react-multi-carousel-dot {
+  background: none;
+  color: inherit;
+  border: none;
+  padding: 0 !important;
+  font: inherit;
+  display: inline-block;
+  zoom: 1;
+  cursor: pointer;
+  -webkit-user-select: none;
+  user-select: none;
+}
+.custom-dot-list-style {
+  margin-top: 20px;
+  text-align: center;
+  display: inline-block;
+  width: 100%;
+  text-align: center;
+}
+.custom-dot-list-style .react-multi-carousel-dot button {
+  height: 13px;
+  width: 13px;
+  background: #2a6ba3;
+  border-radius: 2px !important;
+  opacity: 0.8;
+  border: none;
+  margin-right: 15px;
+}
+
+.custom-dot-list-style
+  .react-multi-carousel-dot.react-multi-carousel-dot--active
+  button,
+.custom-dot-list-style .react-multi-carousel-dot button:hover {
+  height: 16px;
+  width: 16px;
+  opacity: 1;
+  transform: translateY(2px);
+  background: aquamarine !important;
+}
+
+/* @media(min-width: 480.6px) and (max-width: 575.5px) {
+    .react-multi-carousel-track .react-multi-carousel-item .card .name {
+        left: 20%;
+        right: 20%;
+
+    }
+}
+
+@media(max-width: 360px) {
+    .react-multi-carousel-track .react-multi-carousel-item .card .name {
+        left: 30%;
+    }
+} */
+/* end owl carousel */
