@@ -1,7 +1,7 @@
 /** @format */
 
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;1,300&display=swap');
-
+@import url('https://fonts.cdnfonts.com/css/helvetica-neue-9?styles=49034,49032,49044');
 .banner-sec img {
   position: relative;
   text-align: center;
@@ -25,7 +25,7 @@
   width: 200px;
   font-size: 20px;
   font-weight: 600;
-  color: #fff;
+ color: var(--white-gray);
   cursor: pointer;
   /* margin: 20px; */
   height: 55px;
@@ -61,16 +61,42 @@
 .funfacts-inner {
   text-align: center;
 }
+.contain-border {
+  border: 2px solid #00a0e3;
+  text-align: center;
+  align-items: center;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+  margin:10px auto;
+  height: 120px;
+  width: 45%;
+}
+
 .single-funfacts {
   color: #fff;
 }
 .funfacts-style-two h3 {
-  font-size: 2rem;
   font-weight: 900;
   vertical-align: middle;
+  margin-top: 10px;
+  margin-bottom: -2px;
+  font-size: 30px;
 }
 .funfacts-style-two p {
   font-size: 20px;
+}
+.odometer-value {
+  font-family: 'Helvetica Neue', sans-serif;
+  font-weight: 700;
+  color: var(--white-gray)
+}
+.odo-text {
+  font-size: 25px;
+  font-family: 'Poppins';
+  vertical-align: middle;
+  color: aqua;
 }
 .testimonial {
   font-weight: 600;
@@ -80,8 +106,6 @@
 .banner-sec1 {
   width: 100%;
   height: auto;
-}
-.banner-sec1 {
   position: relative;
 }
 .Shiv_tag {
@@ -93,7 +117,7 @@
 }
 .shiv_logo {
   height: auto;
-  width: 350px;
+  width: 300px;
 }
 .shiv-btn {
   box-shadow: 2px 1px 3px 2px rgb(37 98 104);
@@ -108,7 +132,7 @@
 
   font-size: 25px;
 }
-.shiv-btn:hover{
+.shiv-btn:hover {
   background-image: linear-gradient(
     to left,
     #f29b3e,
@@ -116,7 +140,12 @@
     #3fb2bf,
     #54cfdd
   );
-  background-position:100% 0;
+  background-position: 100% 0;
+}
+.home-about-sec{
+  text-align: center;
+  padding: 15px;
+  width: 100%;
 }
 
 /*start fade animation */
@@ -169,19 +198,15 @@ button {
 /* end fade animation */
 
 /* start owl carousel */
-.carousel {
+/* .carousel {
   border-image: linear-gradient(#00a0e3, #29b974, #29b974, #00a0e3) 30;
   border-style: solid;
   border-width: 10px;
   border-radius: 15px;
-  /* background: linear-gradient(rgb(228, 243, 250), transparent) padding-box,
-    linear-gradient(to bottom, #039fe2, #239fc5, #55b7cf, aquamarine) border-box;
-  border-radius: 15px;
-  border: 10px solid transparent;
-  padding: 1px; */
-}
+  margin-top: -20px;
+} */
 .head-title {
-  color: #fff;
+  color: var(--white-gray);
 }
 
 .react-multi-carousel-track .react-multi-carousel-item {
@@ -193,6 +218,7 @@ button {
 .react-multi-carousel-track .react-multi-carousel-item .card {
   padding: 10px;
   position: relative;
+  background-color:#f8f9fa;
 }
 
 .react-multi-carousel-track .react-multi-carousel-item img {
@@ -270,13 +296,29 @@ button {
   transform: translateY(2px);
   background: aquamarine !important;
 }
+/* @media (max-width:475px) {
+  .funfacts-style-two p {
+    max-width: 135px;
+}
 
+}
+@media (max-width:406px ) {
+  .funfacts-style-two p {
+    min-width: 135px;
+}
+} */
 
- @media (max-width: 575.5px) {
-.banner-tag {
-    position:relative;
+@media (max-width: 575.5px) {
+  .contain-border {
+    height: 180px;
+  }
+  .banner-tag {
+    position: relative;
     text-align: center;
     margin-left: 65px;
+  }
+  .odo-text {
+    font-size: 20px;
   }
 
   .banner-tag .tags {
@@ -287,7 +329,7 @@ button {
   }
   .banner-tag .tags h2 {
     padding: 15px 0px !important;
-    color: #fff;
+    color: var(--white-gray);
     text-align: center;
   }
   .banner-tag .tags button {

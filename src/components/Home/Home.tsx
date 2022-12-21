@@ -17,15 +17,17 @@ const Home = () => {
     third: 0,
     fourth: 0,
   });
+  const [fade, setFade] = useState('d-none');
   const handleScroll = () => {
     const position = window.pageYOffset;
     if (position > 100) {
       setValue({
-        first: 35,
-        second: 30,
-        third: 5,
-        fourth: 1000,
+        first: 1986,
+        second: 35,
+        third: 4.7,
+        fourth: 1500,
       });
+      setFade('fadeInLeft');
     }
   };
   useEffect(() => {
@@ -38,7 +40,7 @@ const Home = () => {
     superLargeDesktop: {
       // the naming can be any, depends on you.
       breakpoint: { max: 4000, min: 3000 },
-      items: 5,
+      items: 4,
     },
     desktop: {
       breakpoint: { max: 3000, min: 1024 },
@@ -73,34 +75,34 @@ const Home = () => {
       <div>
         <div className='funfacts-inner container'>
           <div className='row p-3'>
-            <div className='col-lg-6 col-6 col-sm-6'>
-              <div className='animated fadeInLeft'>
+            <div className='col-lg-5 col-5 col-sm-5 contain-border'>
+              <div className={`animated ${fade}`}>
                 <div className='single-funfacts'>
                   <div className='funfacts-style-two'>
                     <h3>
                       <Odometer format='d' value={value.first} />
-                      <span className='fs-4'> Years</span>
+                      <span className='odo-text'> Since</span>
                     </h3>
                     <p>Total Developing Experience</p>
                   </div>
                 </div>
               </div>
             </div>
-            <div className='col-lg-6 col-6 col-sm-6'>
-              <div className='animated fadeInLeft'>
+            <div className='col-lg-5 col-5 col-sm-5 contain-border'>
+              <div className={`animated ${fade}`}>
                 <div className='single-funfacts'>
                   <div className='funfacts-style-two'>
                     <h3>
                       <Odometer format='(,ddd).dd' value={value.second} />
-                      <span className='fs-4'> +</span>
+                      <span className='odo-text'>+</span>
                     </h3>
                     <p>Total Completed Projects </p>
                   </div>
                 </div>
               </div>
             </div>
-            <div className='col-lg-6 col-6 col-sm-6'>
-              <div className='animated fadeInLeft'>
+            <div className='col-lg-5 col-5 col-sm-5 contain-border'>
+              <div className={`animated ${fade}`}>
                 <div className='single-funfacts'>
                   <div className='funfacts-style-two'>
                     <h3>
@@ -109,15 +111,15 @@ const Home = () => {
                         duration={2000}
                         value={value.third}
                       />
-                      <span className='fs-4'> M+ Sq.ft</span>
+                      <span className='odo-text'> Lac+</span>
                     </h3>
-                    <p>Total Land developed</p>
+                    <p>Total Land developed in Sq.meter</p>
                   </div>
                 </div>
               </div>
             </div>
-            <div className='col-lg-6 col-6 col-sm-6'>
-              <div className='animated fadeInLeft'>
+            <div className='col-lg-5 col-5 col-sm-5 contain-border'>
+              <div className={`animated ${fade}`}>
                 <div className='single-funfacts'>
                   <div className='funfacts-style-two'>
                     <h3>
@@ -126,9 +128,9 @@ const Home = () => {
                         duration={2000}
                         value={value.fourth}
                       />
-                      <span className='fs-4'> +</span>
+                      <span className='odo-text'>+</span>
                     </h3>
-                    <p> Total Dedicated Units delivered</p>
+                    <p> Total Possessions delivered</p>
                   </div>
                 </div>
               </div>
@@ -152,7 +154,7 @@ const Home = () => {
           renderDotsOutside={true}
           keyBoardControl={false}
           centerMode={false}
-          itemClass='carousel-item-padding-10-px'
+          // itemClass='carousel-item-padding-10-px'
           removeArrowOnDeviceType={['tablet', 'mobile']}
           dotListClass='custom-dot-list-style'>
           {home_carousel.map((item, index) => (
@@ -170,7 +172,7 @@ const Home = () => {
       </div>
       <div className='container p-3'>
         <div className='row p-3'>
-          <div className='col-md-6'>
+          <div className='col-md-5 m-auto'>
             <img
               src={require('../../Assets/About us png.png')}
               alt='About-us'
@@ -178,16 +180,18 @@ const Home = () => {
               height='auto'
             />
           </div>
-          <div className='col-md-6 text-center p-3'>
-            <img
-              className='shiv_logo'
-              src={require('../../Assets/Shiv Logo.png')}
-              alt=''
-            />
-            <p className='Shiv_tag pt-3'>
-              Great Things Never Come <br /> From Comfort Zones
-            </p>
-            <button className='tag-button shiv-btn'>About Us</button>
+          <div className='col-md-5 m-auto'>
+            <div className='home-about-sec'>
+              <img
+                className='shiv_logo'
+                src={require('../../Assets/Shiv Logo.png')}
+                alt=''
+              />
+              <p className='Shiv_tag pt-3'>
+                Great Things Never Come <br /> From Comfort Zones
+              </p>
+              <button className='tag-button shiv-btn'>About Us</button>
+            </div>
           </div>
         </div>
       </div>

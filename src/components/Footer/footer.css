@@ -3,11 +3,11 @@
     margin: 0;
     height: 300px;
     font-weight: 100;
-    background-color: #00a0e3;
-    -webkit-overflow-Y: visible;
-    -moz-overflow-Y: visible;
-    -o-overflow-Y: visible;
-    overflow-y: visible;
+    background-color: none;
+    -webkit-overflow-x: visible;
+    -moz-overflow-x: visible;
+    -o-overflow-x: visible;
+    overflow-x: visible;
     -webkit-animation: fadeIn 1 5s ease-out;
     -moz-animation: fadeIn 1 5s ease-out;
     -o-animation: fadeIn 1 5s ease-out;
