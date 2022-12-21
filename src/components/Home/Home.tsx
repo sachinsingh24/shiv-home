@@ -118,8 +118,7 @@ const Home = () => {
                 </div>
               </div>
             </div>
-
-            <div className='col-lg-4 col-6 col-sm-6'>
+            <div className='col-lg-6 col-6 col-sm-6'>
               <div className='animated fadeInLeft'>
                 <div className='single-funfacts'>
                   <div className='funfacts-style-two'>

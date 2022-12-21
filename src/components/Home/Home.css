@@ -155,7 +155,7 @@ button {
 
 /* start owl carousel */
 .carousel {
-  /* border-image: linear-gradient(
+  border-image: linear-gradient(
     #25aae1,
     #29b974,
     #1ac974,
@@ -234,11 +234,9 @@ button {
   user-select: none;
 }
 .custom-dot-list-style {
-  margin-top: 20px;
   text-align: center;
   display: inline-block;
   width: 100%;
-  text-align: center;
 }
 .custom-dot-list-style .react-multi-carousel-dot button {
   height: 13px;
@@ -272,6 +270,5 @@ button {
 @media(max-width: 360px) {
     .react-multi-carousel-track .react-multi-carousel-item .card .name {
         left: 30%;
-    }
-} */
+}
 /* end owl carousel */
