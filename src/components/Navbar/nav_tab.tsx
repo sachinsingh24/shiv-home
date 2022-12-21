@@ -15,7 +15,7 @@ const nav_tab = () => {
           <Navbar key={expand} bg='transparent' expand={expand}>
             <Container fluid>
               <Navbar.Brand href='#'>
-                <img width='150px' src={logo} alt='' />
+                <img src={logo} alt='jpu logo' />
               </Navbar.Brand>
               <Navbar.Toggle
                 aria-controls={`offcanvasNavbar-expand-${expand}`}

@@ -7,3 +7,12 @@
   font-family: 'Poppins' !important;
   font-weight: 500;
 }
+.navbar-brand img{
+width: 150px;
+}
+
+@media (max-width: 575.5px) {
+  .navbar-brand img{
+width: 100px;
+}
+}
