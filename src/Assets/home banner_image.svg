@@ -7,7 +7,7 @@
   version="1.1"
   style="shape-rendering:geometricPrecision; text-rendering:geometricPrecision; image-rendering:optimizeQuality; fill-rule:evenodd; clip-rule:evenodd"
   viewBox="0 0 1924 1084.13"
-  xmlns:xlink="http://www.w3.org/1999/xlink"
+  xmlnsXlink="http://www.w3.org/1999/xlink"
   xmlns:xodm="http://www.corel.com/coreldraw/odm/2003">
  <defs>
    <clipPath id="id0">
@@ -17,7 +17,8 @@
  <g id="Layer_x0020_1">
   <metadata id="CorelCorpID_0Corel-Layer"/>
   <g style="clip-path:url(#id0)">
-   <image x="0" y="0" width="1924" height="1084.13" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAwIAAAGyCAIAAAGvjNQlAAAACXBIWXMA
+      <image x="0" y="0" width="1924" height="1084.13"
+        xlinkHref="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAwIAAAGyCAIAAAGvjNQlAAAACXBIWXMA
 ABJ0AAASdAHeZh94AAAgAElEQVR4nMx9B4AcxbH25NnZvHs56O6UM5IQSWCQSCbaYDBgjA2OOGdj
 nMDGftjvt/3s54QTxuE5kWwwwWBMRgIRFJF00kmX8+1tnJ0c/qqe3b29tHcS8v/+ET7vzs70dFdX
 V31VXVXDbX/msYN7X117yjk7nvzr2Ve/R1dVlxJ0y/H5JNd1KYqiaZr8pfyBwM6dr65csZqmGe8M
@@ -5767,7 +5768,7 @@ SxRkKztlTGFQgH0u5sy7vvsz+/u2hCHDeRb4nV5QgtGE0dLApZm7JrImQ3Lvw1GeL54+e0q7aGtr
 U+v3uGcpqon/7smryjFWV1BDrdU3OqdWzXek36F5rIQ33TfSIrMqdEwrf3BwQCdhY7pBRtu4Dghp
 xzvzOXzafI4p7HfKgRZijAhA9MhDPK8Agl7DkON0XL/9Zd5XItS8QVewMaX3ZUV+jHxVMB6PtScC
 civ89N2vfsMru81OJUfOPNDeeHQr9U5b4cJ8TZeBrqEgs6CPGoHFG8oimvWGcVlkYx+LC2+6dRvE
-JHu3DpwuEb6g8X2XvfuOV0d+BDx3hkR1wxK45RL+fZD+X8jjHSwEljXsAAAAAElFTkSuQmCC"/>
-  </g>
+JHu3DpwuEb6g8X2XvfuOV0d+BDx3hkR1wxK45RL+fZD+X8jjHSwEljXsAAAAAElFTkSuQmCC" />
+    </g>
  </g>
 </svg>
