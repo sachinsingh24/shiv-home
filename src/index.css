@@ -23,13 +23,13 @@ code {
 
 /* Handle */
 ::-webkit-scrollbar-thumb {
-  background: #f29b3e;
+  background: #29b974;
   border-radius: 10px;
 }
 
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
-  background: #20c274;
+  background: #f29b3e;
 }
 html {
   scroll-behavior: smooth;

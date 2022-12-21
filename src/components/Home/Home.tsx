@@ -61,7 +61,7 @@ const Home = () => {
       </div>
       <div className='banner-tag'>
         <div className='row'>
-          <div className='col'>
+          <div className='col-12 col-lg-12 col-sm-12'>
             <div className='tags animated fadeInLeft'>
               <img src={brand_logo} alt='' />
               <h2 className='pt-3 pb-3'>Experience The Paradise life</h2>
@@ -136,7 +136,7 @@ const Home = () => {
           </div>
         </div>
       </div>
-      <div className='container carousel'>
+      <div className='fluid-container carousel'>
         <h4 className='text-center m-3 head-title'>Our Completed Projects</h4>
         <Carousel
           responsive={responsive}
