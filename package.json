@@ -16,6 +16,7 @@
     "react-multi-carousel": "^2.8.2",
     "react-odometerjs": "^3.1.0",
     "react-particles": "^2.6.0",
+    "react-router-dom": "^6.6.0",
     "react-scripts": "5.0.1",
     "tslib": "^2.4.1",
     "tsparticles": "^2.6.0",

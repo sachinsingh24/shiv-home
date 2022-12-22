@@ -14,7 +14,7 @@ const nav_tab = () => {
         {['md'].map((expand) => (
           <Navbar key={expand} bg='transparent' expand={expand}>
             <Container fluid>
-              <Navbar.Brand href='#'>
+              <Navbar.Brand href='/'>
                 <img src={logo} alt='jpu logo' />
               </Navbar.Brand>
               <Navbar.Toggle
@@ -31,19 +31,19 @@ const nav_tab = () => {
                 </Offcanvas.Header>
                 <Offcanvas.Body>
                   <Nav className='justify-content-end flex-grow-1 pe-2 fs-5'>
-                    <Nav.Link href='#action1'>Home</Nav.Link>
-                    <Nav.Link href='#action2'>About</Nav.Link>
+                    <Nav.Link href='/'>Home</Nav.Link>
+                    <Nav.Link href='/About'>About</Nav.Link>
                     <NavDropdown
                       title='Projects'
                       id={`offcanvasNavbarDropdown-expand-${expand}`}>
-                      <NavDropdown.Item href='#action3'>
+                      <NavDropdown.Item href='/Project_completed'>
                         Completed projects
                       </NavDropdown.Item>
-                      <NavDropdown.Item href='#action4'>
+                      <NavDropdown.Item href='/Project_OnGoing'>
                         Ongoing Projects
                       </NavDropdown.Item>
                     </NavDropdown>
-                    <Nav.Link href='#action5'>Contact Us</Nav.Link>
+                    <Nav.Link href='/Contact_Us'>Contact Us</Nav.Link>
                   </Nav>
                 </Offcanvas.Body>
               </Navbar.Offcanvas>

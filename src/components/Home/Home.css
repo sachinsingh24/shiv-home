@@ -100,7 +100,11 @@
 }
 .testimonial {
   font-weight: 600;
-  font-size: 20px;
+  text-align: center;
+  margin: 15px auto 30px auto;
+}
+.testimonial h5 span{
+  color: #101c81;
 }
 
 .banner-sec1 {

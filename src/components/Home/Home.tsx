@@ -22,7 +22,7 @@ const Home = () => {
     const position = window.pageYOffset;
     if (position > 100) {
       setValue({
-        first: 1986,
+        first: 37,
         second: 35,
         third: 4.7,
         fourth: 1500,
@@ -67,7 +67,9 @@ const Home = () => {
             <div className='tags animated fadeInLeft'>
               <img src={brand_logo} alt='' />
               <h2 className='pt-3 pb-3'>Experience The Paradise life</h2>
-              <button className='tag-button'> Explore Now</button>
+              <a href='/Project_OnGoing'>
+                <button className='tag-button'> Explore Now </button>
+              </a>
             </div>
           </div>
         </div>
@@ -81,7 +83,7 @@ const Home = () => {
                   <div className='funfacts-style-two'>
                     <h3>
                       <Odometer format='d' value={value.first} />
-                      <span className='odo-text'> Since</span>
+                      <span className='odo-text'> Years</span>
                     </h3>
                     <p>Total Developing Experience</p>
                   </div>
@@ -130,7 +132,7 @@ const Home = () => {
                       />
                       <span className='odo-text'>+</span>
                     </h3>
-                    <p> Total Possessions delivered</p>
+                    <p> Total Units delivered</p>
                   </div>
                 </div>
               </div>
@@ -162,8 +164,10 @@ const Home = () => {
               <div className='img-card'>
                 <img src={item.images} alt='' />
               </div>
-              <div className='testimonial mt-4 mb-4 text-center'>
-                {item.testimonial}
+              <div className='testimonial'>
+                <h5>
+                  LOCATION: <span>{item.testimonial}</span>
+                </h5>
               </div>
               <div className='name'>{item.name}</div>
             </div>
