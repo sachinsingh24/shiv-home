@@ -2,8 +2,13 @@
 
 import React from 'react';
 
-
-import {Offcanvas,NavDropdown,Navbar, Nav,Container}  from 'react-bootstrap';
+import {
+  Offcanvas,
+  NavDropdown,
+  Navbar,
+  Nav,
+  Container,
+} from 'react-bootstrap';
 import './nav-tab.css';
 import logo from '../../Assets/JPU_Logo.png';
 import { Link } from 'react-router-dom';
@@ -13,7 +18,12 @@ const nav_tab = () => {
     <>
       <section>
         {['md'].map((expand) => (
-          <Navbar key={expand} bg='transparent' expand={expand}>
+          <Navbar
+            key={expand}
+            bg='transparent'
+            expand={expand}
+            collapseOnSelect>
+            {console.log(expand)}
             <Container fluid>
               <Navbar.Brand>
                 <Link to='/'>
@@ -23,6 +33,7 @@ const nav_tab = () => {
               <Navbar.Toggle
                 aria-controls={`offcanvasNavbar-expand-${expand}`}
               />
+
               <Navbar.Offcanvas
                 id={`offcanvasNavbar-expand-${expand}`}
                 aria-labelledby={`offcanvasNavbarLabel-expand-${expand}`}
@@ -32,36 +43,33 @@ const nav_tab = () => {
                     shiv home
                   </Offcanvas.Title>
                 </Offcanvas.Header>
-                <Offcanvas.Body>
+                <Offcanvas.Body aria-label='Close'>
                   <Nav className='justify-content-end flex-grow-1 pe-2 fs-5'>
-                    {/* <Nav.Link>Home</Nav.Link> */}
-                    <Link to='/' className='nav-link'>
+                    <Nav.Link as={Link} to='/' eventKey='1'>
                       Home
-                    </Link>
-                    <Link to='/About' className='nav-link'>
+                    </Nav.Link>
+                    <Nav.Link as={Link} to='/About' eventKey='2'>
                       About
-                    </Link>
+                    </Nav.Link>
                     <NavDropdown
                       title='Projects'
                       id={`offcanvasNavbarDropdown-expand-${expand}`}>
-                      <NavDropdown.Item>
-                        <Link
-                          to='/Project_completed'
-                          className='dropdown-toggle nav-link'>
-                          Completed projects
-                        </Link>
+                      <NavDropdown.Item
+                        as={Link}
+                        to='/Project_completed'
+                        eventKey='3'>
+                        Completed projects
                       </NavDropdown.Item>
-                      <NavDropdown.Item>
-                        <Link
-                          to='/Project_OnGoing'
-                          className='dropdown-toggle nav-link'>
-                          Ongoing Projects
-                        </Link>
+                      <NavDropdown.Item
+                        as={Link}
+                        to='/Project_OnGoing'
+                        eventKey='4'>
+                        Ongoing Projects
                       </NavDropdown.Item>
                     </NavDropdown>
-                    <Link to='/Contact_Us' className='nav-link'>
+                    <Nav.Link as={Link} to='/Contact_Us' eventKey='5'>
                       Contact Us
-                    </Link>
+                    </Nav.Link>
                   </Nav>
                 </Offcanvas.Body>
               </Navbar.Offcanvas>
