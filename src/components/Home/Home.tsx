@@ -9,6 +9,7 @@ import Carousel from 'react-multi-carousel';
 import 'react-multi-carousel/lib/styles.css';
 import { home_carousel } from './data';
 import home_banner from '../../Assets/home banner_image.svg';
+import { Link } from 'react-router-dom';
 
 const Home = () => {
   const [value, setValue] = useState({
@@ -67,9 +68,9 @@ const Home = () => {
             <div className='tags animated fadeInLeft'>
               <img src={brand_logo} alt='' />
               <h2 className='pt-3 pb-3'>Experience The Paradise life</h2>
-              <a href='/Project_OnGoing'>
+              <Link to='/Project_OnGoing'>
                 <button className='tag-button'> Explore Now </button>
-              </a>
+              </Link>
             </div>
           </div>
         </div>
@@ -194,7 +195,9 @@ const Home = () => {
               <p className='Shiv_tag pt-3'>
                 Great Things Never Come <br /> From Comfort Zones
               </p>
-              <button className='tag-button shiv-btn'>About Us</button>
+              <Link to='/About'>
+                <button className='tag-button shiv-btn'>About Us</button>
+              </Link>
             </div>
           </div>
         </div>

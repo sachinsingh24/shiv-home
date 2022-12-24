@@ -6,6 +6,7 @@ import React from 'react';
 import {Offcanvas,NavDropdown,Navbar, Nav,Container}  from 'react-bootstrap';
 import './nav-tab.css';
 import logo from '../../Assets/JPU_Logo.png';
+import { Link } from 'react-router-dom';
 
 const nav_tab = () => {
   return (
@@ -14,8 +15,10 @@ const nav_tab = () => {
         {['md'].map((expand) => (
           <Navbar key={expand} bg='transparent' expand={expand}>
             <Container fluid>
-              <Navbar.Brand href='/'>
-                <img src={logo} alt='jpu logo' />
+              <Navbar.Brand>
+                <Link to='/'>
+                  <img src={logo} alt='jpu logo' />
+                </Link>
               </Navbar.Brand>
               <Navbar.Toggle
                 aria-controls={`offcanvasNavbar-expand-${expand}`}
@@ -31,19 +34,34 @@ const nav_tab = () => {
                 </Offcanvas.Header>
                 <Offcanvas.Body>
                   <Nav className='justify-content-end flex-grow-1 pe-2 fs-5'>
-                    <Nav.Link href='/'>Home</Nav.Link>
-                    <Nav.Link href='/About'>About</Nav.Link>
+                    {/* <Nav.Link>Home</Nav.Link> */}
+                    <Link to='/' className='nav-link'>
+                      Home
+                    </Link>
+                    <Link to='/About' className='nav-link'>
+                      About
+                    </Link>
                     <NavDropdown
                       title='Projects'
                       id={`offcanvasNavbarDropdown-expand-${expand}`}>
-                      <NavDropdown.Item href='/Project_completed'>
-                        Completed projects
+                      <NavDropdown.Item>
+                        <Link
+                          to='/Project_completed'
+                          className='dropdown-toggle nav-link'>
+                          Completed projects
+                        </Link>
                       </NavDropdown.Item>
-                      <NavDropdown.Item href='/Project_OnGoing'>
-                        Ongoing Projects
+                      <NavDropdown.Item>
+                        <Link
+                          to='/Project_OnGoing'
+                          className='dropdown-toggle nav-link'>
+                          Ongoing Projects
+                        </Link>
                       </NavDropdown.Item>
                     </NavDropdown>
-                    <Nav.Link href='/Contact_Us'>Contact Us</Nav.Link>
+                    <Link to='/Contact_Us' className='nav-link'>
+                      Contact Us
+                    </Link>
                   </Nav>
                 </Offcanvas.Body>
               </Navbar.Offcanvas>

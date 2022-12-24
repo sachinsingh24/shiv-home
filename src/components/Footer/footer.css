@@ -1,9 +1,12 @@
 .footer {
     position: relative;
+    object-fit: cover;
     margin: 0;
+
     height: 300px;
+    text-align: center;
     font-weight: 100;
-    background-color: none;
+    background-color: #232741;
     -webkit-overflow-x: visible;
     -moz-overflow-x: visible;
     -o-overflow-x: visible;

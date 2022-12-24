@@ -41,3 +41,16 @@ p{
 html {
   scroll-behavior: smooth;
 }
+
+.Coming-soon{
+position: relative;
+text-align: center;
+align-items: center;
+height: 100vh;
+}
+.Coming-soon-content{
+  position: absolute;
+  top: 40%;
+  left: 30%;
+  right: 30%;
+}
