@@ -27,7 +27,7 @@ const Ongoing = () => {
     },
   };
   return (
-    <section className='bg-dark'>
+    <section style={{ backgroundColor: '#232741' }}>
       {/* <iframe
         title='This is a unique title'
         data-type='text/html'
