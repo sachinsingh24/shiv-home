@@ -20,8 +20,8 @@ const nav_tab = () => {
         {['md'].map((expand) => (
           <Navbar
             key={expand}
-            bg='transparent'
             expand={expand}
+            className='bg-transparent '
             collapseOnSelect>
             {console.log(expand)}
             <Container fluid>
@@ -33,7 +33,6 @@ const nav_tab = () => {
               <Navbar.Toggle
                 aria-controls={`offcanvasNavbar-expand-${expand}`}
               />
-
               <Navbar.Offcanvas
                 id={`offcanvasNavbar-expand-${expand}`}
                 aria-labelledby={`offcanvasNavbarLabel-expand-${expand}`}

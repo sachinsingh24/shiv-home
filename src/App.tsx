@@ -14,7 +14,7 @@ import About from './components/About/About';
 import Contact from './components/Contact_Us/Contact';
 import ProjectCom from './components/Projects/Completed/Completed';
 import ProjectOnGoing from './components/Projects/Ongoing/Ongoing';
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { Routes, Route } from 'react-router-dom';
 
 function App() {
   const particlesInit = useCallback(async (engine: Engine) => {
@@ -23,28 +23,26 @@ function App() {
 
   return (
     <div className='App'>
-      <Router>
-        <Navbar />
-        <Routes>
-          <Route
-            path='/'
-            element={
-              <>
-                <Particles
-                  options={particlesOptions as ISourceOptions}
-                  init={particlesInit}
-                />{' '}
-                <Home />
-              </>
-            }
-          />
-          <Route path='About' element={<About />} />
-          <Route path='Contact_Us' element={<Contact />} />
-          <Route path='Project_completed' element={<ProjectCom />} />
-          <Route path='Project_OnGoing' element={<ProjectOnGoing />} />
-        </Routes>
-        <Footer />
-      </Router>
+      <Navbar />
+      <Routes>
+        <Route
+          path='/'
+          element={
+            <>
+              <Particles
+                options={particlesOptions as ISourceOptions}
+                init={particlesInit}
+              />{' '}
+              <Home />
+            </>
+          }
+        />
+        <Route path='About' element={<About />} />
+        <Route path='Contact_Us' element={<Contact />} />
+        <Route path='Project_completed' element={<ProjectCom />} />
+        <Route path='Project_OnGoing' element={<ProjectOnGoing />} />
+      </Routes>
+      <Footer />
     </div>
   );
 }

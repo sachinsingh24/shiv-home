@@ -18,6 +18,7 @@ const Home = () => {
     third: 0,
     fourth: 0,
   });
+
   const [fade, setFade] = useState('d-none');
   const handleScroll = () => {
     const position = window.pageYOffset;
@@ -59,7 +60,7 @@ const Home = () => {
   };
   return (
     <section>
-      <div className='banner-sec fluid-container'>
+      <div className='banner-sec fluid-container '>
         <img src={home_banner} alt='' />
       </div>
       <div className='banner-tag'>
@@ -142,7 +143,7 @@ const Home = () => {
         </div>
       </div>
       <div className='fluid-container carousel'>
-        <h4 className='text-center m-3 head-title'>Our Completed Projects</h4>
+        <h4 className='text-center mt-3 head-title'>Our Completed Projects</h4>
         <Carousel
           responsive={responsive}
           swipeable={true}
@@ -175,7 +176,7 @@ const Home = () => {
           ))}
         </Carousel>
       </div>
-      <div className='container p-3'>
+      <div className='container'>
         <div className='row p-3'>
           <div className='col-md-5 m-auto'>
             <img

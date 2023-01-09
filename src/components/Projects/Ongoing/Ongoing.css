@@ -1,0 +1,57 @@
+@import url('https://fonts.googleapis.com/css2?family=Italianno&display=swap');
+
+
+
+.banner-head-ongoing{
+    position: relative;
+    z-index: 1;
+}
+.banner-head-ongoing img {
+    height: 100%;
+    width: 100%;
+}
+.content-head{
+    font-family: 'Italianno', sans-serif;
+    position: absolute;
+    top: 32%;
+    right: 7%;
+    width: 28%;
+}
+.content-head h2{
+    font-weight: 700;
+    font-size: 40px;
+}
+.content-head p{
+    font-size: 200%;
+    font-weight: 700;
+    color: black !important;
+    line-height: 95%;
+}
+.elevation{
+    /* height:100% ; */
+    /* background-color: rgb(19, 19, 73); */
+}
+.elevation img{
+    width: 100%;
+    height:100%;
+}
+.layout-details ul{
+    color: white;
+    text-decoration: none;
+    list-style: none;
+    font-size: 20px;
+}
+.line-through{
+    text-decoration: line-through;
+}
+@media (max-width: 575.5px) {
+    .content-head h2{
+    font-weight: 700;
+    font-size: 10px;
+}
+.content-head p{
+    font-size: 8px;
+    font-weight: 700;
+    line-height: 5px;
+}
+}
