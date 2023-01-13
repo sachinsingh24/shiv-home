@@ -204,6 +204,10 @@ const Ongoing = () => {
                       <li>No Additional GST, Stamp Duty & Ragistration</li>
                     </ul>
                   </div>
+                  <button className='tag-button schedule'>
+                    {' '}
+                    Schedule Your Site Visit Now
+                  </button>
                 </div>
               </div>
             </div>
