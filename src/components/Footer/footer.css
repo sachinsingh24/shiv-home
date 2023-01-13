@@ -263,6 +263,10 @@
 .Footer-Menu{
   list-style: none;
   text-align: left;
+
+}
+.Footer-Menu h4{
+font-style: italic;
 }
 .Footer-Menu li a{
  color: white !important;

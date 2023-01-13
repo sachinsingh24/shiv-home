@@ -78,7 +78,7 @@ const Ongoing = () => {
           </div>
         </div>
       </div>
-      <div className='container text-center'>
+      <div className='container-fluid text-center'>
         <Carousel
           responsive={responsive}
           swipeable={true}
@@ -92,89 +92,126 @@ const Ongoing = () => {
           keyBoardControl={false}
           centerMode={false}>
           <div className='elevation'>
-            <img src={require('../../../Assets/Shiv 1.png')} alt='' />
+            <img
+              src={require('../../../Assets/Shiv 1.png')}
+              alt=''
+              className='img-fluid'
+            />
           </div>
           <div className='elevation'>
-            <img src={require('../../../Assets/Shiv 2.png')} alt='' />
+            <img
+              src={require('../../../Assets/Shiv 2.png')}
+              alt=''
+              className='img-fluid'
+            />
           </div>
           <div className='elevation'>
-            <img src={require('../../../Assets/Shiv 3.png')} alt='' />
+            <img
+              src={require('../../../Assets/Shiv 3.png')}
+              alt=''
+              className='img-fluid'
+            />
           </div>
           <div className='elevation'>
-            <img src={require('../../../Assets/Shiv 4.png')} alt='' />
+            <img
+              src={require('../../../Assets/Shiv 4.png')}
+              alt=''
+              className='img-fluid'
+            />
           </div>
           <div className='elevation'>
-            <img src={require('../../../Assets/Shiv 5.png')} alt='' />
+            <img
+              src={require('../../../Assets/Shiv 5.png')}
+              alt=''
+              className='img-fluid'
+            />
           </div>
         </Carousel>
         <h2 className='header-style'>Typolopy</h2>
-        <Carousel
-          responsive={responsive}
-          swipeable={true}
-          draggable={true}
-          // slidesToSlide={3}
-          showDots={false}
-          ssr={true}
-          infinite={false}
-          autoPlay={false}
-          keyBoardControl={false}
-          centerMode={false}>
-          <div className='elevation'>
-            <div className='row justify-content-between'>
-              <div className='col-md-8 isomatrix'>
-                <img
-                  src={require('../../../Assets/2 BHK.png')}
-                  alt=''
-                  width='100%'
-                  height='auto'
-                />
-              </div>
-              <div className='col-md-4'>
-                <div className='layout-details'>
-                  <ul>
-                    Shiv paradise 1 BHK Apartment
-                    <li>Typology : 1 BHK Apartment</li>
-                    <li>Carpet Area : 410 Sq.ft </li>
-                    <li>Living Size : 14'9" x 9'00"</li>
-                    <li>kitchen : 7'30" X 7'10"</li>
-                    <li>Bedroom : 9'00" x 11'00"</li>
-                    <li>Price : ₹ 26.00 Lacs</li>
-                    <li className='line-through'>Price : ₹ 28.00 Lacs</li>
-                  </ul>
+        <div className='container'>
+          <Carousel
+            responsive={responsive}
+            swipeable={true}
+            draggable={true}
+            // slidesToSlide={3}
+            showDots={false}
+            ssr={true}
+            infinite={false}
+            autoPlay={false}
+            keyBoardControl={false}
+            centerMode={false}>
+            <div className='elevation'>
+              <div className='row justify-content-between'>
+                <div className='col-md-6 isomatrix'>
+                  <img
+                    src={require('../../../Assets/2 BHK.png')}
+                    alt=''
+                    className='img-fluid'
+                  />
+                </div>
+                <div className='col-md-6'>
+                  <div className='layout-details'>
+                    <ul>
+                      Shiv paradise 1 BHK Apartment
+                      <li>Typology : 1 BHK Apartment</li>
+                      <li>Carpet Area : 410 Sq.ft </li>
+                      <li>Living Size : 14'9" x 9'00"</li>
+                      <li>kitchen : 7'30" X 7'10"</li>
+                      <li>Bedroom : 9'00" x 11'00"</li>
+                      <li>Price : ₹ 26.00 Lacs</li>
+                      <li className='line-through'>Price : ₹ 28.00 Lacs</li>
+                    </ul>
+                    <h2>Available Offers :</h2>
+                    <ul className='details'>
+                      <li>Spot ₹ 2 Lacs Spot Discount & Assured Gifts</li>
+                      <li>90% Loan Available from All Leading banks</li>
+                      <li>No Additional GST, Stamp Duty & Ragistration</li>
+                    </ul>
+                  </div>
+                  <button className='tag-button schedule'>
+                    {' '}
+                    Schedule Your Site Visit Now
+                  </button>
                 </div>
               </div>
             </div>
-          </div>
-          <div className='elevation'>
-            <div className='row justify-content-between'>
-              <div className='col-md-8 isomatrix'>
-                <img
-                  src={require('../../../Assets/1 BHK.png')}
-                  alt=''
-                  width='100%'
-                  height='auto'
-                />
-              </div>
-              <div className='col-md-4'>
-                <div className='layout-details'>
-                  <ul>
-                    Shiv paradsdd 1 BHK Apartment
-                    {/* <li>Shiv paradsdd 1 BHK Apartment</li> */}
-                    <li>Typology : 1 BHK Apartment</li>
-                    <li>Carpet Area : 410 Sq.ft </li>
-                    <li>Living Size : 14'9" x 9'00"</li>
-                    <li>kitchen : 7'30" X 7'10"</li>
-                    <li>Bedroom : 9'00" x 11'00"</li>
-                    <li>Price : ₹ 26.00 Lacs</li>
-                    <li className='line-through'>Price : ₹ 28.00 Lacs</li>
-                  </ul>
+            <div className='elevation'>
+              <div className='row justify-content-between'>
+                <div className='col-md-6 isomatrix'>
+                  <img
+                    src={require('../../../Assets/1 BHK.png')}
+                    alt=''
+                    className='img-fluid'
+                  />
+                </div>
+                <div className='col-md-6'>
+                  <div className='layout-details'>
+                    <ul className='details'>
+                      Shiv paradsdd 1 BHK Apartment
+                      {/* <li>Shiv paradsdd 1 BHK Apartment</li> */}
+                      <li>Typology : 1 BHK Apartment</li>
+                      <li>Carpet Area : 410 Sq.ft </li>
+                      <li>Living Size : 14'9" x 9'00"</li>
+                      <li>kitchen : 7'30" X 7'10"</li>
+                      <li>Bedroom : 9'00" x 11'00"</li>
+                      <li>Price : ₹ 26.00 Lacs</li>
+                      <li className='line-through'>Price : ₹ 28.00 Lacs</li>
+                    </ul>
+                    <h2>Available Offers :</h2>
+                    <ul className='details'>
+                      <li>Spot ₹ 2 Lacs Spot Discount & Assured Gifts</li>
+                      <li>90% Loan Available from All Leading banks</li>
+                      <li>No Additional GST, Stamp Duty & Ragistration</li>
+                    </ul>
+                  </div>
                 </div>
               </div>
             </div>
-          </div>
-        </Carousel>
+          </Carousel>
+        </div>
       </div>
       <div className='container-fluid text-center'>
+        <h2 className='header-style'>Floor Layout</h2>
         <Carousel
           responsive={responsive}
           swipeable={true}
@@ -194,7 +231,7 @@ const Ongoing = () => {
           </div>
         </Carousel>
       </div>
-      <div className='container-fluid Amenities'>
+      <div className='container Amenities'>
         <h2>
           External <span>amenities</span>
         </h2>
@@ -311,6 +348,7 @@ const Ongoing = () => {
           </div>
         </div>
       </div>
+      <div className='container'></div>
     </section>
   );
 };

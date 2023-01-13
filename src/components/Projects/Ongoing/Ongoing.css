@@ -29,13 +29,13 @@
 .content-head p {
   font-size: 20px;
   font-weight: 700;
-  color: black !important;
+  color: #212529 !important;
   line-height: 25px;
   font-family: 'poppins';
   font-style: italic;
 }
-.header-style{
-color: aliceblue;
+.header-style {
+  color: aliceblue;
   font-family: 'poppins', sans-serif;
   font-size: 50px;
   font-style: italic;
@@ -51,15 +51,41 @@ color: aliceblue;
   height: 100%;
 }
 .isomatrix img {
-  width: 65%;
+  width: 100%;
   height: auto;
   margin: auto;
 }
 .layout-details ul {
+  text-align: left;
   color: white;
   text-decoration: none;
   list-style: none;
-  font-size: 20px;
+  font-size: 28px;
+}
+.layout-details h2{
+    color: aliceblue;
+    text-align: left;
+
+}
+.layout-details ul:last-child{
+   font-size: 18px;
+   line-height: 15px;
+}
+.layout-details ul:last-child li::before{
+content: "";
+  border-color: transparent aqua;
+  border-style: solid;
+  border-width: 0.35em 0 0.35em 0.45em;
+  display: block;
+  height: 0;
+  width: 0;
+  left: -1em;
+  top: 15px;
+  position: relative;
+}
+.schedule{
+    width: 400px;
+    margin-top: 30px;
 }
 .line-through {
   text-decoration: line-through;
@@ -81,7 +107,6 @@ color: aliceblue;
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-
 }
 
 .Amenities-1 .image-wrap {
@@ -91,7 +116,7 @@ color: aliceblue;
   padding: 0 30px;
   flex: 1 1 16.66%;
   max-width: 16.66%;
-      margin: 10px auto;
+  margin: 10px auto;
 }
 .Amenities-1 .image-wrap::before {
   content: '';
@@ -100,7 +125,7 @@ color: aliceblue;
   top: 30px;
   bottom: 30px;
   left: 0;
-  right: calc(100% - 10px);
+  right: calc(100% - 6px);
 }
 .Amenities-1 .last-wrap::after {
   content: '';
@@ -108,12 +133,12 @@ color: aliceblue;
   background: white;
   top: 30px;
   bottom: 30px;
-  left: calc(100% - 10px);
+  left: calc(100% - 6px);
   right: 0;
 }
-.Amenities-1 .image-wrap .img-fluid{
-    margin-left: 5px;
-    margin-bottom:15px ;
+.Amenities-1 .image-wrap .img-fluid {
+  margin-left: 5px;
+  margin-bottom: 15px;
 }
 
 .vertical-pipe {
@@ -144,12 +169,12 @@ color: aliceblue;
   font-style: italic;
 }
 .locality ul li span {
-    color: aqua;
+  color: aqua;
 }
-.highlight-tag{
-    margin:15px auto ;
-    font-size: 30px;
-    font-style: italic;
+.highlight-tag {
+  margin: 15px auto;
+  font-size: 30px;
+  font-style: italic;
 }
 @media (max-width: 575.5px) {
   .content-head h2 {
@@ -157,21 +182,22 @@ color: aliceblue;
     font-size: 13px;
   }
   .content-head p {
-    font-size: 6.5px;
+    font-size: 6px;
     font-weight: 700;
-    line-height: 6px;
+    line-height: 7px;
+    margin-bottom: 6px;
   }
   .Amenities-1 .image-wrap {
     flex: 1 1 50%;
     min-width: 50%;
   }
   .Amenities-1 .last-wrap-1::after {
-  content: '';
-  position: absolute;
-  background: white;
-  top: 30px;
-  bottom: 30px;
-  left: calc(100% - 10px);
-  right: 0;
-}
+    content: '';
+    position: absolute;
+    background: white;
+    top: 30px;
+    bottom: 30px;
+    left: calc(100% - 6px);
+    right: 0;
+  }
 }
