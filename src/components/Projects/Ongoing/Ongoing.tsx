@@ -107,7 +107,7 @@ const Ongoing = () => {
             <img src={require('../../../Assets/Shiv 5.png')} alt='' />
           </div>
         </Carousel>
-        <h2 className='mt-3 mb-3 text-white'>Typolopy</h2>
+        <h2 className='header-style'>Typolopy</h2>
         <Carousel
           responsive={responsive}
           swipeable={true}
@@ -199,95 +199,117 @@ const Ongoing = () => {
           External <span>amenities</span>
         </h2>
         <p>Premium Residential Project With Modern Amenities</p>
-        <div className='d-flex justify-content-center flex-wrap'>
-          <span className='vertical-pipe'>|</span>
-          <img
-            src={require('../../../Assets/Amenities/garden.png')}
-            width='150px'
-            height='125px'
-            alt=''
-          />
-          <span className='vertical-pipe'>|</span>
-          <img
-            src={require('../../../Assets/Amenities/sitting area.png')}
-            width='150px'
-            height='125px'
-            alt=''
-          />
-          <span className='vertical-pipe'>|</span>
-          <img
-            src={require('../../../Assets/Amenities/club house.png')}
-            width='150px'
-            height='125px'
-            alt=''
-          />
-          <span className='vertical-pipe'>|</span>
-          <img
-            src={require('../../../Assets/Amenities/play area.png')}
-            width='150px'
-            height='125px'
-            alt=''
-          />
-          <span className='vertical-pipe'>|</span>
-          <img
-            src={require('../../../Assets/Amenities/jogging track.png')}
-            width='150px'
-            height='125px'
-            alt=''
-          />
-          <span className='vertical-pipe'>|</span>
-          <img
-            src={require('../../../Assets/Amenities/parking space.png')}
-            width='150px'
-            height='125px'
-            alt=''
-          />
-          <span className='vertical-pipe'>|</span>
+        <div className='Amenities-1 flex-wrap '>
+          <div className='image-wrap'>
+            <img
+              src={require('../../../Assets/Amenities/garden.png')}
+              className='img-fluid'
+              alt=''
+            />
+          </div>
+          <div className='image-wrap last-wrap-1'>
+            <img
+              src={require('../../../Assets/Amenities/sitting area.png')}
+              className='img-fluid'
+              alt=''
+            />
+          </div>
+          <div className='image-wrap'>
+            <img
+              src={require('../../../Assets/Amenities/club house.png')}
+              className='img-fluid'
+              alt=''
+            />
+          </div>
+          <div className='image-wrap last-wrap-1'>
+            <img
+              src={require('../../../Assets/Amenities/play area.png')}
+              className='img-fluid'
+              alt=''
+            />
+          </div>
+          <div className='image-wrap'>
+            <img
+              src={require('../../../Assets/Amenities/jogging track.png')}
+              className='img-fluid'
+              alt=''
+            />
+          </div>
+          <div className='image-wrap last-wrap'>
+            <img
+              src={require('../../../Assets/Amenities/parking space.png')}
+              className='img-fluid'
+              alt=''
+            />
+          </div>
         </div>
-        {/* <div className='row'>
-          <div className='col-4'>
-            <img
-              src={require('../../../Assets/Amenities/club house.png')}
-              width='150px'
-              alt=''
-            />
-            <span className='vertical-pipe'>|</span>
-            <img
-              src={require('../../../Assets/Amenities/garden.png')}
-              alt=''
-              width='150px'
-            />
-            <span className='vertical-pipe'>|</span>
+      </div>
+      <div className='container-fluid locality'>
+        <div className='row'>
+          <div className='col-md-7 col-sm-12'>
+            <ul>
+              <h2>
+                Location <span>highlights</span>
+              </h2>
+              <div className='row'>
+                <div className='col-md-6'>
+                  <li>
+                    Heaven Bell School - <span>0 Km</span>
+                  </li>
+                  <li>
+                    Gurukul Inter. School - <span>2 Km</span>
+                  </li>
+                  <li>
+                    KilBill PreSchool - <span>1 Km</span>
+                  </li>
+                  <li>
+                    Poddar Brio School - <span>4 Km</span>
+                  </li>
+                  <li>
+                    Relience Smart Point - <span>1 Km</span>
+                  </li>
+                  <li>
+                    Apollo Children Hospital - <span>800 m</span>
+                  </li>
+                </div>
+                <div className='col-md-6'>
+                  <li>
+                    Ashwini Hospital - <span>800 m</span>
+                  </li>
+                  <li>
+                    Matrix Hospital - <span>2 Km</span>
+                  </li>
+                  <li>
+                    Central Hospital - <span>4 Km</span>
+                  </li>
+                  <li>
+                    Badlapur Railway Station - <span>2 Km</span>
+                  </li>
+                  <li>
+                    McDonald, KFC, Pizza Hut - <span>3 Km</span>
+                  </li>
+                  <li>
+                    Dmart Badlapur - <span>4 Km</span>
+                  </li>
+                </div>
+              </div>
+            </ul>
+            <p className='highlight-tag'>
+              Shiv Paradise is in a loaction where everything is accessible If
+              There is A will, There Is A Nearby Markets.
+            </p>
           </div>
-          <div className='col-4'>
-            <span className='vertical-pipe'>|</span>
-            <img
-              src={require('../../../Assets/Amenities/club house.png')}
-              width='150px'
-              alt=''
-            />
-            <span className='vertical-pipe'>|</span>
-            <img
-              src={require('../../../Assets/Amenities/garden.png')}
-              alt=''
-              width='150px'
-            />
+          <div className='col-md-5 col-sm-12'>
+            <h2>
+              Location <span>Map</span>
+            </h2>
+            <iframe
+              title='map'
+              src='https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3768.90930819408!2d73.228344814214!3d19.155446754449834!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7ed42720c030f%3A0x5685d6da23c7c5fd!2sShiv%20Paradise!5e0!3m2!1sen!2sin!4v1673603511280!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade'
+              width='100%'
+              height='350px'></iframe>
           </div>
-          <div className='col-4'>
-            <span className='vertical-pipe'>|</span>
-            <img
-              src={require('../../../Assets/Amenities/club house.png')}
-              width='150px'
-              alt=''
-            />
-            <span className='vertical-pipe'>|</span>
-            <img
-              src={require('../../../Assets/Amenities/garden.png')}
-              alt=''
-              width='150px'
-            />
-          </div>
-        </div> */}
+        </div>
       </div>
     </section>
   );

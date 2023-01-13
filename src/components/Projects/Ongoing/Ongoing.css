@@ -1,92 +1,177 @@
+/** @format */
+
 @import url('https://fonts.googleapis.com/css2?family=Italianno&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,300&display=swap');
 
-
-
-.banner-head-ongoing{
-    position: relative;
-    z-index: 1;
+.banner-head-ongoing {
+  position: relative;
+  z-index: 1;
 }
 .banner-head-ongoing img {
-    height: 100%;
-    width: 100%;
+  height: 100%;
+  width: 100%;
 }
-.logo-under-add p{
-    margin-left: 45px;
+.logo-under-add p {
+  margin-left: 45px;
 }
 
-.content-head{
-    font-family: 'Italianno', sans-serif;
-    position: absolute;
-    top: 32%;
-    right: 7%;
-    width: 28%;
+.content-head {
+  font-family: 'Italianno', sans-serif;
+  position: absolute;
+  top: 32%;
+  right: 7%;
+  width: 28%;
 }
-.content-head h2{
-    font-weight: 700;
-    font-size: 45px;
+.content-head h2 {
+  font-weight: 700;
+  font-size: 45px;
 }
-.content-head p{
-    font-size: 20px;
-    font-weight: 700;
-    color: black !important;
-    line-height: 25px;
-    font-family: 'poppins';
+.content-head p {
+  font-size: 20px;
+  font-weight: 700;
+  color: black !important;
+  line-height: 25px;
+  font-family: 'poppins';
+  font-style: italic;
+}
+.header-style{
+color: aliceblue;
+  font-family: 'poppins', sans-serif;
+  font-size: 50px;
+  font-style: italic;
+  margin: 20px auto;
+  vertical-align: middle;
+}
+.elevation {
+  /* height:100% ; */
+  /* background-color: rgb(19, 19, 73); */
+}
+.elevation img {
+  width: 100%;
+  height: 100%;
+}
+.isomatrix img {
+  width: 65%;
+  height: auto;
+  margin: auto;
+}
+.layout-details ul {
+  color: white;
+  text-decoration: none;
+  list-style: none;
+  font-size: 20px;
+}
+.line-through {
+  text-decoration: line-through;
+}
+.Amenities {
+  text-align: center;
+}
+.Amenities h2 {
+  margin-bottom: -20px;
+  color: aliceblue;
+  font-family: 'Italianno', sans-serif;
+  font-size: 75px;
+}
+.Amenities h2 span {
+  font-size: 40px;
+  color: aqua;
+}
+.Amenities-1 {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+
+}
+
+.Amenities-1 .image-wrap {
+  display: block;
+  position: relative;
+  overflow: hidden;
+  padding: 0 30px;
+  flex: 1 1 16.66%;
+  max-width: 16.66%;
+      margin: 10px auto;
+}
+.Amenities-1 .image-wrap::before {
+  content: '';
+  position: absolute;
+  background: white;
+  top: 30px;
+  bottom: 30px;
+  left: 0;
+  right: calc(100% - 10px);
+}
+.Amenities-1 .last-wrap::after {
+  content: '';
+  position: absolute;
+  background: white;
+  top: 30px;
+  bottom: 30px;
+  left: calc(100% - 10px);
+  right: 0;
+}
+.Amenities-1 .image-wrap .img-fluid{
+    margin-left: 5px;
+    margin-bottom:15px ;
+}
+
+.vertical-pipe {
+  margin: auto 15px;
+  color: aliceblue;
+  font-size: 100px;
+  vertical-align: middle;
+}
+.vertical-pipe img {
+  margin: auto;
+}
+.locality {
+  text-align: center;
+}
+.locality h2 {
+  color: aliceblue;
+  font-family: 'Italianno', sans-serif;
+  font-size: 75px;
+}
+.locality h2 span {
+  font-size: 40px;
+  color: aqua;
+}
+.locality ul li {
+  color: aliceblue;
+  list-style: none;
+  font-size: 22px;
+  font-style: italic;
+}
+.locality ul li span {
+    color: aqua;
+}
+.highlight-tag{
+    margin:15px auto ;
+    font-size: 30px;
     font-style: italic;
-
-}
-.elevation{
-    /* height:100% ; */
-    /* background-color: rgb(19, 19, 73); */
-}
-.elevation img{
-    width: 100%;
-    height:100%;
-}
-.isomatrix img{
-width: 65%;
-height: auto;
-margin:auto;
-}
-.layout-details ul{
-    color: white;
-    text-decoration: none;
-    list-style: none;
-    font-size: 20px;
-}
-.line-through{
-    text-decoration: line-through;
-}
-.Amenities{
-text-align: center;
-}
-.Amenities h2{
-    margin-bottom: -20px;
-    color: aliceblue;
-    font-family: 'Italianno', sans-serif;
-    font-size: 75px;
-}
-.Amenities h2 span{
-    font-size: 40px;
-
-}
-.vertical-pipe{
-    margin: auto 15px;
-    color: aliceblue;
-    font-size: 100px;
-    vertical-align: middle;
-}
-.vertical-pipe img{
-    margin: auto;
 }
 @media (max-width: 575.5px) {
-    .content-head h2{
+  .content-head h2 {
     font-weight: 700;
     font-size: 13px;
-}
-.content-head p{
+  }
+  .content-head p {
     font-size: 6.5px;
     font-weight: 700;
     line-height: 6px;
+  }
+  .Amenities-1 .image-wrap {
+    flex: 1 1 50%;
+    min-width: 50%;
+  }
+  .Amenities-1 .last-wrap-1::after {
+  content: '';
+  position: absolute;
+  background: white;
+  top: 30px;
+  bottom: 30px;
+  left: calc(100% - 10px);
+  right: 0;
 }
 }
