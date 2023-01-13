@@ -61,6 +61,23 @@ const Ongoing = () => {
           </p>
         </div>
       </div>
+      <div className='below-video-tag container-fluid'>
+        <div className='row justify-content-between'>
+          <div className='col-md-4'>
+            <div className='logo-under-add'>
+              <img
+                src={require('../../../Assets/Shiv Logo.png')}
+                alt=''
+                width={'200px'}
+              />
+              <p>Shirgoan, Badlapur (E) </p>
+            </div>
+          </div>
+          <div className='col-md-8'>
+            <div></div>
+          </div>
+        </div>
+      </div>
       <div className='container text-center'>
         <Carousel
           responsive={responsive}
@@ -103,16 +120,16 @@ const Ongoing = () => {
           keyBoardControl={false}
           centerMode={false}>
           <div className='elevation'>
-            <div className='row justify-content-center'>
-              <div className='col-md-6'>
+            <div className='row justify-content-between'>
+              <div className='col-md-8 isomatrix'>
                 <img
                   src={require('../../../Assets/2 BHK.png')}
                   alt=''
                   width='100%'
-                  height='100%'
+                  height='auto'
                 />
               </div>
-              <div className='col-md-6'>
+              <div className='col-md-4'>
                 <div className='layout-details'>
                   <ul>
                     Shiv paradise 1 BHK Apartment
@@ -129,16 +146,16 @@ const Ongoing = () => {
             </div>
           </div>
           <div className='elevation'>
-            <div className='row justify-content-center'>
-              <div className='col-md-6'>
+            <div className='row justify-content-between'>
+              <div className='col-md-8 isomatrix'>
                 <img
                   src={require('../../../Assets/1 BHK.png')}
                   alt=''
                   width='100%'
-                  height='100%'
+                  height='auto'
                 />
               </div>
-              <div className='col-md-6'>
+              <div className='col-md-4'>
                 <div className='layout-details'>
                   <ul>
                     Shiv paradsdd 1 BHK Apartment
@@ -176,6 +193,101 @@ const Ongoing = () => {
             <img src={require('../../../Assets/First-to-seventh.png')} alt='' />
           </div>
         </Carousel>
+      </div>
+      <div className='container-fluid Amenities'>
+        <h2>
+          External <span>amenities</span>
+        </h2>
+        <p>Premium Residential Project With Modern Amenities</p>
+        <div className='d-flex justify-content-center flex-wrap'>
+          <span className='vertical-pipe'>|</span>
+          <img
+            src={require('../../../Assets/Amenities/garden.png')}
+            width='150px'
+            height='125px'
+            alt=''
+          />
+          <span className='vertical-pipe'>|</span>
+          <img
+            src={require('../../../Assets/Amenities/sitting area.png')}
+            width='150px'
+            height='125px'
+            alt=''
+          />
+          <span className='vertical-pipe'>|</span>
+          <img
+            src={require('../../../Assets/Amenities/club house.png')}
+            width='150px'
+            height='125px'
+            alt=''
+          />
+          <span className='vertical-pipe'>|</span>
+          <img
+            src={require('../../../Assets/Amenities/play area.png')}
+            width='150px'
+            height='125px'
+            alt=''
+          />
+          <span className='vertical-pipe'>|</span>
+          <img
+            src={require('../../../Assets/Amenities/jogging track.png')}
+            width='150px'
+            height='125px'
+            alt=''
+          />
+          <span className='vertical-pipe'>|</span>
+          <img
+            src={require('../../../Assets/Amenities/parking space.png')}
+            width='150px'
+            height='125px'
+            alt=''
+          />
+          <span className='vertical-pipe'>|</span>
+        </div>
+        {/* <div className='row'>
+          <div className='col-4'>
+            <img
+              src={require('../../../Assets/Amenities/club house.png')}
+              width='150px'
+              alt=''
+            />
+            <span className='vertical-pipe'>|</span>
+            <img
+              src={require('../../../Assets/Amenities/garden.png')}
+              alt=''
+              width='150px'
+            />
+            <span className='vertical-pipe'>|</span>
+          </div>
+          <div className='col-4'>
+            <span className='vertical-pipe'>|</span>
+            <img
+              src={require('../../../Assets/Amenities/club house.png')}
+              width='150px'
+              alt=''
+            />
+            <span className='vertical-pipe'>|</span>
+            <img
+              src={require('../../../Assets/Amenities/garden.png')}
+              alt=''
+              width='150px'
+            />
+          </div>
+          <div className='col-4'>
+            <span className='vertical-pipe'>|</span>
+            <img
+              src={require('../../../Assets/Amenities/club house.png')}
+              width='150px'
+              alt=''
+            />
+            <span className='vertical-pipe'>|</span>
+            <img
+              src={require('../../../Assets/Amenities/garden.png')}
+              alt=''
+              width='150px'
+            />
+          </div>
+        </div> */}
       </div>
     </section>
   );
