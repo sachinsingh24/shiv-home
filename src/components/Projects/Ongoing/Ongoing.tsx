@@ -315,6 +315,9 @@ const Ongoing = () => {
               <h2>
                 Location <span>highlights</span>
               </h2>
+              <p className='highlight-tag'>
+                Shiv Paradise is in a location where everything is accessible.
+              </p>
               <div className='row'>
                 <div className='col-md-6'>
                   <li>
@@ -358,10 +361,14 @@ const Ongoing = () => {
                 </div>
               </div>
             </ul>
-            <p className='highlight-tag'>
-              Shiv Paradise is in a loaction where everything is accessible If
-              There is A will, There Is A Nearby Markets.
-            </p>
+            <a
+              href='../../../Assets/Shiv Paradise.pdf'
+              target='_blank'
+              className='tag-button download'
+              rel='noreferrer'
+              download={'shiv Paradise'}>
+              Download Broucher
+            </a>
           </div>
           <div className='col-md-5 col-sm-12'>
             <h2>
@@ -409,14 +416,14 @@ const Ongoing = () => {
                 </small> */}
               </div>
               <div className='form-group mb-1'>
-                <label htmlFor='Subject'> Subject</label>
+                <label htmlFor='mobile'> Mobile No</label>
                 <input
                   type='text'
                   className='form-control'
-                  id='Subject'
+                  id='mobile'
                   name='from_subject'
                   aria-describedby='emailHelp'
-                  placeholder='Enter Subject'
+                  placeholder='Enter Mobile No'
                 />
                 {/* <small
                   className='text-danger font-weight-bold'
@@ -441,22 +448,6 @@ const Ongoing = () => {
                 Submit
               </button>
             </form>
-            <a
-              className='hitCounter'
-              href='https://visitorshitcounter.com/'
-              target='_blank'
-              rel='noreferrer'
-              title='Hit counter'
-              data-name='f996988d486622b24d4c8ab39dbf7a27|7|internal|1|#0099cc|#f5f5f5|small|s-hit'>
-              Hit Counter
-            </a>
-            <script>
-              document.write("
-              <script
-                type='text/javascript'
-                src='https://visitorshitcounter.com/js/hitCounter.js?v="+Date.now()+"'></script>
-              ");
-            </script>
           </div>
         </div>
       </div>

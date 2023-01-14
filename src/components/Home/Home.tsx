@@ -4,7 +4,7 @@ import React, { useState, useEffect } from 'react';
 import Odometer from 'react-odometerjs';
 import 'odometer/themes/odometer-theme-default.css';
 import './Home.css';
-import brand_logo from '../../Assets/Shiv_Paradise_Logo.png';
+
 import Carousel from 'react-multi-carousel';
 import 'react-multi-carousel/lib/styles.css';
 import { home_carousel } from './data';
@@ -61,13 +61,25 @@ const Home = () => {
   return (
     <section>
       <div className='banner-sec fluid-container '>
-        <img src={require('../../Assets/Home.png')} alt='' />
+        <img
+          src={require('../../Assets/Home.png')}
+          alt=''
+          className='desktop-view'
+        />
+        <img
+          src={require('../../Assets/Mobile View.png')}
+          alt=''
+          className='mobile-view d-none'
+        />
       </div>
       <div className='banner-tag'>
         <div className='row'>
           <div className='col-12 col-lg-12 col-sm-12'>
             <div className='tags animated fadeInLeft'>
-              <img src={brand_logo} alt='' />
+              <img
+                src={require('../../Assets/Shiv_Paradise_logo.png')}
+                alt=''
+              />
               <h2 className='pt-3 pb-3'>Experience The Paradise life</h2>
               <Link to='/Project_OnGoing'>
                 <button className='tag-button'> Explore Now </button>
@@ -76,72 +88,72 @@ const Home = () => {
           </div>
         </div>
       </div>
-      <div>
-        <div className='funfacts-inner container'>
-          <div className='row p-3'>
-            <div className='col-lg-5 col-5 col-sm-5 contain-border'>
-              <div className={`animated ${fade}`}>
-                <div className='single-funfacts'>
-                  <div className='funfacts-style-two'>
-                    <h3>
-                      <Odometer format='d' value={value.first} />
-                      <span className='odo-text'> Years</span>
-                    </h3>
-                    <p>Total Developing Experience</p>
-                  </div>
+
+      <div className='funfacts-inner container'>
+        <div className='row p-3'>
+          <div className='col-lg-5 col-5 col-sm-5 contain-border'>
+            <div className={`animated ${fade}`}>
+              <div className='single-funfacts'>
+                <div className='funfacts-style-two'>
+                  <h3>
+                    <Odometer format='d' value={value.first} />
+                    <span className='odo-text'> Years</span>
+                  </h3>
+                  <p>Total Developing Experience</p>
                 </div>
               </div>
             </div>
-            <div className='col-lg-5 col-5 col-sm-5 contain-border'>
-              <div className={`animated ${fade}`}>
-                <div className='single-funfacts'>
-                  <div className='funfacts-style-two'>
-                    <h3>
-                      <Odometer format='(,ddd).dd' value={value.second} />
-                      <span className='odo-text'>+</span>
-                    </h3>
-                    <p>Total Completed Projects </p>
-                  </div>
+          </div>
+          <div className='col-lg-5 col-5 col-sm-5 contain-border'>
+            <div className={`animated ${fade}`}>
+              <div className='single-funfacts'>
+                <div className='funfacts-style-two'>
+                  <h3>
+                    <Odometer format='(,ddd).dd' value={value.second} />
+                    <span className='odo-text'>+</span>
+                  </h3>
+                  <p>Total Completed Projects </p>
                 </div>
               </div>
             </div>
-            <div className='col-lg-5 col-5 col-sm-5 contain-border'>
-              <div className={`animated ${fade}`}>
-                <div className='single-funfacts'>
-                  <div className='funfacts-style-two'>
-                    <h3>
-                      <Odometer
-                        format='(,ddd).dd'
-                        duration={2000}
-                        value={value.third}
-                      />
-                      <span className='odo-text'> Lac+</span>
-                    </h3>
-                    <p>Total Land developed in Sq.meter</p>
-                  </div>
+          </div>
+          <div className='col-lg-5 col-5 col-sm-5 contain-border'>
+            <div className={`animated ${fade}`}>
+              <div className='single-funfacts'>
+                <div className='funfacts-style-two'>
+                  <h3>
+                    <Odometer
+                      format='(,ddd).dd'
+                      duration={2000}
+                      value={value.third}
+                    />
+                    <span className='odo-text'> Lac+</span>
+                  </h3>
+                  <p>Total Land developed in Sq.meter</p>
                 </div>
               </div>
             </div>
-            <div className='col-lg-5 col-5 col-sm-5 contain-border'>
-              <div className={`animated ${fade}`}>
-                <div className='single-funfacts'>
-                  <div className='funfacts-style-two'>
-                    <h3>
-                      <Odometer
-                        format='(,ddd).dd'
-                        duration={2000}
-                        value={value.fourth}
-                      />
-                      <span className='odo-text'>+</span>
-                    </h3>
-                    <p> Total Units delivered</p>
-                  </div>
+          </div>
+          <div className='col-lg-5 col-5 col-sm-5 contain-border'>
+            <div className={`animated ${fade}`}>
+              <div className='single-funfacts'>
+                <div className='funfacts-style-two'>
+                  <h3>
+                    <Odometer
+                      format='(,ddd).dd'
+                      duration={2000}
+                      value={value.fourth}
+                    />
+                    <span className='odo-text'>+</span>
+                  </h3>
+                  <p> Total Units delivered</p>
                 </div>
               </div>
             </div>
           </div>
         </div>
       </div>
+
       <div className='fluid-container carousel'>
         <h4 className='text-center mt-3 head-title'>Our Completed Projects</h4>
         <Carousel

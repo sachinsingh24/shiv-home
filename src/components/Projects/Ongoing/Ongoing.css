@@ -171,16 +171,23 @@
 .locality ul li {
   color: aliceblue;
   list-style: none;
-  font-size: 22px;
-  font-style: italic;
+  font-size: 20px;
+  /* font-style: italic; */
+  text-align: left;
 }
 .locality ul li span {
   color: aqua;
 }
 .highlight-tag {
   margin: 15px auto;
-  font-size: 30px;
+  font-size: 22px;
   font-style: italic;
+}
+.download{
+  text-decoration: none;
+  padding:10px;
+  margin:20px auto !important;
+
 }
 
 .Enquiry {
