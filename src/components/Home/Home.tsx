@@ -77,7 +77,7 @@ const Home = () => {
           <div className='col-12 col-lg-12 col-sm-12'>
             <div className='tags animated fadeInLeft'>
               <img
-                src={require('../../Assets/Shiv_Paradise_logo.png')}
+                src={require('../../Assets/Shiv Paradise logo.png')}
                 alt=''
                 className='img-fluid'
               />
