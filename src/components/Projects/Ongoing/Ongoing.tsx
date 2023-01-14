@@ -43,6 +43,7 @@ const Ongoing = () => {
         (result: any) => {
           console.log(result.text);
           window.alert('message send');
+          event.target.reset();
         },
         (error: any) => {
           console.log(error.text);
