@@ -49,9 +49,8 @@
   margin: 20px auto;
   vertical-align: middle;
 }
-.elevation {
-  /* height:100% ; */
-  /* background-color: rgb(19, 19, 73); */
+.elevation .img-fluid {
+  border: 2px solid #fff;
 }
 .elevation img {
   width: 100%;

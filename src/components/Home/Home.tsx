@@ -8,7 +8,7 @@ import brand_logo from '../../Assets/Shiv_Paradise_Logo.png';
 import Carousel from 'react-multi-carousel';
 import 'react-multi-carousel/lib/styles.css';
 import { home_carousel } from './data';
-import home_banner from '../../Assets/home banner_image.svg';
+// import home_banner from '../../Assets/home banner_image.svg';
 import { Link } from 'react-router-dom';
 
 const Home = () => {
@@ -61,7 +61,7 @@ const Home = () => {
   return (
     <section>
       <div className='banner-sec fluid-container '>
-        <img src={home_banner} alt='' />
+        <img src={require('../../Assets/Home.png')} alt='' />
       </div>
       <div className='banner-tag'>
         <div className='row'>
@@ -176,11 +176,11 @@ const Home = () => {
           ))}
         </Carousel>
       </div>
-      <div className='container'>
-        <div className='row p-3'>
-          <div className='col-md-5 m-auto'>
+      <div className='container-fluid'>
+        <div className='row'>
+          <div className='col-md-12 m-auto'>
             <img
-              src={require('../../Assets/About us png.png')}
+              src={require('../../Assets/About us.png')}
               alt='About-us'
               width='100%'
               height='auto'

@@ -23,7 +23,6 @@ const nav_tab = () => {
             expand={expand}
             className='bg-transparent '
             collapseOnSelect>
-            {console.log(expand)}
             <Container fluid>
               <Navbar.Brand>
                 <Link to='/'>

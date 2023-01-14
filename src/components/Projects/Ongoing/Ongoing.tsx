@@ -29,9 +29,10 @@ const Ongoing = () => {
   };
 
   const form: any = useRef();
-  const validateSubmitForm = () => {};
+  // const validateSubmitForm = () => {};
   const handleSubmit = (event: any) => {
     event.preventDefault();
+    event.target.reset();
     emailjs
       .sendForm(
         'service_ko7o3uo',
@@ -43,11 +44,10 @@ const Ongoing = () => {
         (result: any) => {
           console.log(result.text);
           window.alert('message send');
-          event.target.reset();
         },
         (error: any) => {
           console.log(error.text);
-          window.alert('errorr in form');
+          window.alert('please try again...');
         }
       );
   };
@@ -66,10 +66,7 @@ const Ongoing = () => {
         className='embed-responsive-item'
         allowFullScreen></iframe> */}
       <div className='banner-head-ongoing'>
-        <img
-          src={require('../../../Assets/Shiv Paradise Landing Page.png')}
-          alt=''
-        />
+        <img src={require('../../../Assets/Landing Page.png')} alt='' />
         <div className='content-head'>
           <h2>The Perfect Living Experience</h2>
           <p>
@@ -119,35 +116,35 @@ const Ongoing = () => {
           centerMode={false}>
           <div className='elevation'>
             <img
-              src={require('../../../Assets/Shiv 1.png')}
+              src={require('../../../Assets/Front Elevation.png')}
               alt=''
               className='img-fluid'
             />
           </div>
           <div className='elevation'>
             <img
-              src={require('../../../Assets/Shiv 2.png')}
+              src={require('../../../Assets/Gate Elevation.png')}
               alt=''
               className='img-fluid'
             />
           </div>
           <div className='elevation'>
             <img
-              src={require('../../../Assets/Shiv 3.png')}
+              src={require('../../../Assets/Inside Elevation.png')}
               alt=''
               className='img-fluid'
             />
           </div>
           <div className='elevation'>
             <img
-              src={require('../../../Assets/Shiv 4.png')}
+              src={require('../../../Assets/Side Elevation.png')}
               alt=''
               className='img-fluid'
             />
           </div>
           <div className='elevation'>
             <img
-              src={require('../../../Assets/Shiv 5.png')}
+              src={require('../../../Assets/Top Elevation.png')}
               alt=''
               className='img-fluid'
             />
@@ -439,15 +436,33 @@ const Ongoing = () => {
                 id='submitBtn'
                 className='btn btn-primary mt-3'
                 style={{ width: '100%' }}
-                onClick={() => validateSubmitForm}>
+                // onClick={() => validateSubmitForm}
+              >
                 Submit
               </button>
             </form>
+            <a
+              className='hitCounter'
+              href='https://visitorshitcounter.com/'
+              target='_blank'
+              rel='noreferrer'
+              title='Hit counter'
+              data-name='f996988d486622b24d4c8ab39dbf7a27|7|internal|1|#0099cc|#f5f5f5|small|s-hit'>
+              Hit Counter
+            </a>
+            <script>
+              document.write("
+              <script
+                type='text/javascript'
+                src='https://visitorshitcounter.com/js/hitCounter.js?v="+Date.now()+"'></script>
+              ");
+            </script>
           </div>
         </div>
       </div>
     </section>
   );
 };
+
 
 export default Ongoing;
