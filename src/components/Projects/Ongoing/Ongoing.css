@@ -96,10 +96,8 @@
 }
 .schedule {
   width: 75%;
-   margin: auto;
-  margin-bottom: 5px;
+  margin: 0 auto 5px auto;
   box-shadow: 0 4px 7px 0 rgb(49 196 190 / 75%);
-
 }
 .line-through {
   text-decoration: line-through;
@@ -258,9 +256,8 @@
     left: calc(100% - 6px);
     right: 0;
   }
-  .schedule{
-    margin-top: 20px;
-    margin-bottom: 5px;
+  .schedule {
+    margin: 20px auto 5px auto;
   }
   .Enquiry {
     max-width: 100%;
