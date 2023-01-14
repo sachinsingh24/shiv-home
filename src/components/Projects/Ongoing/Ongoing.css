@@ -11,8 +11,15 @@
   height: 100%;
   width: 100%;
 }
+.logo-under-add {
+  margin-top: 15px;
+  text-align: center;
+}
 .logo-under-add p {
   margin-left: 45px;
+}
+.rera_tag{
+
 }
 
 .content-head {
@@ -62,17 +69,16 @@
   list-style: none;
   font-size: 28px;
 }
-.layout-details h2{
-    color: aliceblue;
-    text-align: left;
-
+.layout-details h2 {
+  color: aliceblue;
+  text-align: left;
 }
-.layout-details ul:last-child{
-   font-size: 18px;
-   line-height: 15px;
+.layout-details ul:last-child {
+  font-size: 18px;
+  line-height: 15px;
 }
-.layout-details ul:last-child li::before{
-content: "";
+.layout-details ul:last-child li::before {
+  content: '';
   border-color: transparent aqua;
   border-style: solid;
   border-width: 0.35em 0 0.35em 0.45em;
@@ -83,9 +89,10 @@ content: "";
   top: 15px;
   position: relative;
 }
-.schedule{
-    width: 75%;
-    margin-top: 30px;
+.schedule {
+  width: 75%;
+  margin-top: 15px;
+  box-shadow: 0 4px 7px 0 rgb(49 196 190 / 75%);
 }
 .line-through {
   text-decoration: line-through;
@@ -176,6 +183,27 @@ content: "";
   font-size: 30px;
   font-style: italic;
 }
+
+.Enquiry {
+  text-align: center;
+  background-color: cadetblue;
+  max-width: 75%;
+  margin: auto;
+  margin-top: 20px;
+}
+
+.enquiry-form {
+  max-width: 75%;
+  margin: auto;
+  padding-bottom: 20px;
+  text-align: left;
+}
+.enquiry-form label {
+  font-size: 20px;
+  font-weight: 600;
+  color: rgb(27, 99, 99);
+}
+
 @media (max-width: 575.5px) {
   .content-head h2 {
     font-weight: 700;
@@ -199,5 +227,8 @@ content: "";
     bottom: 30px;
     left: calc(100% - 6px);
     right: 0;
+  }
+  .Enquiry {
+    max-width: 100%;
   }
 }

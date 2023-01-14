@@ -1,9 +1,10 @@
 /** @format */
 
-import React from 'react';
+import React, { useRef } from 'react';
 import './Ongoing.css';
 import Carousel from 'react-multi-carousel';
 import 'react-multi-carousel/lib/styles.css';
+import emailjs from '@emailjs/browser';
 
 const Ongoing = () => {
   const responsive = {
@@ -26,6 +27,30 @@ const Ongoing = () => {
       items: 1,
     },
   };
+
+  const form: any = useRef();
+  const validateSubmitForm = () => {};
+  const handleSubmit = (event: any) => {
+    event.preventDefault();
+    emailjs
+      .sendForm(
+        'service_ko7o3uo',
+        'template_xk4jqr1',
+        form.current,
+        'gL-UD6RKxWqo5JX-b'
+      )
+      .then(
+        (result: any) => {
+          console.log(result.text);
+          window.alert('message send');
+        },
+        (error: any) => {
+          console.log(error.text);
+          window.alert('errorr in form');
+        }
+      );
+  };
+
   return (
     <section style={{ backgroundColor: '#232741' }}>
       {/* <iframe
@@ -61,7 +86,7 @@ const Ongoing = () => {
           </p>
         </div>
       </div>
-      <div className='below-video-tag container-fluid'>
+      <div className='container below-video-tag '>
         <div className='row justify-content-between'>
           <div className='col-md-4'>
             <div className='logo-under-add'>
@@ -74,7 +99,7 @@ const Ongoing = () => {
             </div>
           </div>
           <div className='col-md-8'>
-            <div></div>
+            <div className='rera_tag'></div>
           </div>
         </div>
       </div>
@@ -127,92 +152,92 @@ const Ongoing = () => {
             />
           </div>
         </Carousel>
-        <h2 className='header-style'>Typolopy</h2>
-        <div className='container'>
-          <Carousel
-            responsive={responsive}
-            swipeable={true}
-            draggable={true}
-            // slidesToSlide={3}
-            showDots={false}
-            ssr={true}
-            infinite={false}
-            autoPlay={false}
-            keyBoardControl={false}
-            centerMode={false}>
-            <div className='elevation'>
-              <div className='row justify-content-between'>
-                <div className='col-md-6 isomatrix'>
-                  <img
-                    src={require('../../../Assets/2 BHK.png')}
-                    alt=''
-                    className='img-fluid'
-                  />
+      </div>
+      <div className='container text-center'>
+        <h2 className='header-style'>Typology</h2>
+        <Carousel
+          responsive={responsive}
+          swipeable={true}
+          draggable={true}
+          // slidesToSlide={3}
+          showDots={false}
+          ssr={true}
+          infinite={false}
+          autoPlay={false}
+          keyBoardControl={false}
+          centerMode={false}>
+          <div className='elevation'>
+            <div className='row justify-content-between'>
+              <div className='col-md-6 isomatrix'>
+                <img
+                  src={require('../../../Assets/1 BHK.png')}
+                  alt=''
+                  className='img-fluid'
+                />
+              </div>
+              <div className='col-md-6'>
+                <div className='layout-details'>
+                  <ul className='details'>
+                    Shiv paradsdd 1 BHK Apartment
+                    {/* <li>Shiv paradsdd 1 BHK Apartment</li> */}
+                    <li>Typology : 1 BHK Apartment</li>
+                    <li>Carpet Area : 410 Sq.ft </li>
+                    <li>Living Size : 14'9" x 9'00"</li>
+                    <li>kitchen : 7'30" X 7'10"</li>
+                    <li>Bedroom : 9'00" x 11'00"</li>
+                    <li>Price : ₹ 26.00 Lacs</li>
+                    <li className='line-through'>Price : ₹ 28.00 Lacs</li>
+                  </ul>
+                  <h2>Available Offers :</h2>
+                  <ul className='details'>
+                    <li>Spot ₹ 2 Lacs Spot Discount & Assured Gifts</li>
+                    <li>90% Loan Available from All Leading banks</li>
+                    <li>No Additional GST, Stamp Duty & Ragistration</li>
+                  </ul>
                 </div>
-                <div className='col-md-6'>
-                  <div className='layout-details'>
-                    <ul>
-                      Shiv paradise 1 BHK Apartment
-                      <li>Typology : 1 BHK Apartment</li>
-                      <li>Carpet Area : 410 Sq.ft </li>
-                      <li>Living Size : 14'9" x 9'00"</li>
-                      <li>kitchen : 7'30" X 7'10"</li>
-                      <li>Bedroom : 9'00" x 11'00"</li>
-                      <li>Price : ₹ 26.00 Lacs</li>
-                      <li className='line-through'>Price : ₹ 28.00 Lacs</li>
-                    </ul>
-                    <h2>Available Offers :</h2>
-                    <ul className='details'>
-                      <li>Spot ₹ 2 Lacs Spot Discount & Assured Gifts</li>
-                      <li>90% Loan Available from All Leading banks</li>
-                      <li>No Additional GST, Stamp Duty & Ragistration</li>
-                    </ul>
-                  </div>
-                  <button className='tag-button schedule'>
-                    {' '}
-                    Schedule Your Site Visit Now
-                  </button>
-                </div>
+                <button className='tag-button schedule'>
+                  {' '}
+                  Schedule Your Site Visit Now
+                </button>
               </div>
             </div>
-            <div className='elevation'>
-              <div className='row justify-content-between'>
-                <div className='col-md-6 isomatrix'>
-                  <img
-                    src={require('../../../Assets/1 BHK.png')}
-                    alt=''
-                    className='img-fluid'
-                  />
+          </div>
+          <div className='elevation'>
+            <div className='row justify-content-between'>
+              <div className='col-md-6 isomatrix'>
+                <img
+                  src={require('../../../Assets/2 BHK.png')}
+                  alt=''
+                  className='img-fluid'
+                />
+              </div>
+              <div className='col-md-6'>
+                <div className='layout-details'>
+                  <ul>
+                    Shiv paradise 1 BHK Apartment
+                    <li>Typology : 1 BHK Apartment</li>
+                    <li>Carpet Area : 410 Sq.ft </li>
+                    <li>Living Size : 14'9" x 9'00"</li>
+                    <li>kitchen : 7'30" X 7'10"</li>
+                    <li>Bedroom : 9'00" x 11'00"</li>
+                    <li>Price : ₹ 26.00 Lacs</li>
+                    <li className='line-through'>Price : ₹ 28.00 Lacs</li>
+                  </ul>
+                  <h2>Available Offers :</h2>
+                  <ul className='details'>
+                    <li>Spot ₹ 2 Lacs Spot Discount & Assured Gifts</li>
+                    <li>90% Loan Available from All Leading banks</li>
+                    <li>No Additional GST, Stamp Duty & Ragistration</li>
+                  </ul>
                 </div>
-                <div className='col-md-6'>
-                  <div className='layout-details'>
-                    <ul className='details'>
-                      Shiv paradsdd 1 BHK Apartment
-                      {/* <li>Shiv paradsdd 1 BHK Apartment</li> */}
-                      <li>Typology : 1 BHK Apartment</li>
-                      <li>Carpet Area : 410 Sq.ft </li>
-                      <li>Living Size : 14'9" x 9'00"</li>
-                      <li>kitchen : 7'30" X 7'10"</li>
-                      <li>Bedroom : 9'00" x 11'00"</li>
-                      <li>Price : ₹ 26.00 Lacs</li>
-                      <li className='line-through'>Price : ₹ 28.00 Lacs</li>
-                    </ul>
-                    <h2>Available Offers :</h2>
-                    <ul className='details'>
-                      <li>Spot ₹ 2 Lacs Spot Discount & Assured Gifts</li>
-                      <li>90% Loan Available from All Leading banks</li>
-                      <li>No Additional GST, Stamp Duty & Ragistration</li>
-                    </ul>
-                  </div>
-                  <button className='tag-button schedule'>
-                    {' '}
-                    Schedule Your Site Visit Now
-                  </button>
-                </div>
+                <button className='tag-button schedule'>
+                  {' '}
+                  Schedule Your Site Visit Now
+                </button>
               </div>
             </div>
-          </Carousel>
-        </div>
+          </div>
+        </Carousel>
       </div>
       <div className='container-fluid text-center'>
         <h2 className='header-style'>Floor Layout</h2>
@@ -352,7 +377,74 @@ const Ongoing = () => {
           </div>
         </div>
       </div>
-      <div className='container'></div>
+      <div className='container text-center pb-3'>
+        <div className='Enquiry pb-3 pt-3'>
+          <h2 className='header-style'>Enquiry Form</h2>
+          <div className='enquiry-form'>
+            <form id='contactForm' ref={form} onSubmit={handleSubmit}>
+              <div className='form-group mb-1'>
+                <label htmlFor='fname'> Full Name</label>
+                <input
+                  type='text'
+                  className='form-control'
+                  id='fname'
+                  name='from_name'
+                  aria-describedby='emailHelp'
+                  placeholder='Enter Your Full  Name'
+                />
+                {/* <small className='text-danger font-weight-bold' id='nameError'>
+                  Please enter your Full name
+                </small> */}
+              </div>
+              <div className='form-group mb-1'>
+                <label htmlFor='email'> Email</label>
+                <input
+                  type='text'
+                  className='form-control'
+                  id='email'
+                  name='from_email'
+                  aria-describedby='emailHelp'
+                  placeholder='Enter Your Email Address'
+                />
+                {/* <small className='text-danger font-weight-bold' id='emailError'>
+                  Please Enter Your Valid Email
+                </small> */}
+              </div>
+              <div className='form-group mb-1'>
+                <label htmlFor='Subject'> Subject</label>
+                <input
+                  type='text'
+                  className='form-control'
+                  id='Subject'
+                  name='from_subject'
+                  aria-describedby='emailHelp'
+                  placeholder='Enter Subject'
+                />
+                {/* <small
+                  className='text-danger font-weight-bold'
+                  id='mobileError'></small> */}
+              </div>
+              <div className='form-group mb-1'>
+                <label htmlFor='Description'>Message</label>
+                <textarea
+                  className='form-control'
+                  id='description'
+                  name='message'
+                  rows={3}
+                  placeholder='Enter Your Message'></textarea>
+              </div>
+              <button
+                type='submit'
+                id='submitBtn'
+                className='btn btn-primary mt-3'
+                style={{ width: '100%' }}
+                onClick={() => validateSubmitForm}>
+                Submit
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
     </section>
   );
 };
