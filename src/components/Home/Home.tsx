@@ -195,16 +195,15 @@ const Home = () => {
             <img
               src={require('../../Assets/About us.png')}
               alt='About-us'
-              width='100%'
-              height='auto'
+              className='img-fluid'
             />
           </div>
           <div className='col-md-5 m-auto'>
             <div className='home-about-sec'>
               <img
-                className='shiv_logo'
+                className='shiv_logo img-fluid'
                 src={require('../../Assets/Shiv Logo.png')}
-                alt=''
+                alt='Shiv-corporation'
               />
               <p className='Shiv_tag pt-3'>
                 Great Things Never Come <br /> From Comfort Zones

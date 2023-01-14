@@ -18,8 +18,7 @@
 .logo-under-add p {
   margin-left: 45px;
 }
-.rera_tag{
-
+.rera_tag {
 }
 
 .content-head {
@@ -32,12 +31,14 @@
 .content-head h2 {
   font-weight: 700;
   font-size: 45px;
+  margin: auto;
+  margin-top: -10px;
 }
 .content-head p {
-  font-size: 20px;
+  font-size: 17px;
   font-weight: 700;
   color: #212529 !important;
-  line-height: 25px;
+  line-height: 24px;
   font-family: 'poppins';
   font-style: italic;
 }
@@ -60,6 +61,12 @@
   width: 100%;
   height: auto;
   margin: auto;
+}
+.isomatrix-details {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
 }
 .layout-details ul {
   text-align: left;
@@ -90,7 +97,7 @@
 }
 .schedule {
   width: 75%;
-  margin-top: 15px;
+  margin-bottom: 5px;
   box-shadow: 0 4px 7px 0 rgb(49 196 190 / 75%);
 }
 .line-through {
@@ -98,12 +105,18 @@
 }
 .Amenities {
   text-align: center;
+  margin-bottom: 35px;
 }
 .Amenities h2 {
   margin-bottom: -20px;
   color: aliceblue;
   font-family: 'Italianno', sans-serif;
   font-size: 75px;
+}
+.Amenities p {
+  font-family: 'Popping', sans-serif;
+  font-weight: 500;
+  font-size: 17px;
 }
 .Amenities h2 span {
   font-size: 40px;
@@ -119,7 +132,7 @@
   display: block;
   position: relative;
   overflow: hidden;
-  padding: 0 30px;
+  padding: 0 16px;
   flex: 1 1 16.66%;
   max-width: 16.66%;
   margin: 10px auto;
@@ -127,7 +140,7 @@
 .Amenities-1 .image-wrap::before {
   content: '';
   position: absolute;
-  background: white;
+  background: aqua;
   top: 30px;
   bottom: 30px;
   left: 0;
@@ -136,15 +149,20 @@
 .Amenities-1 .last-wrap::after {
   content: '';
   position: absolute;
-  background: white;
+  background: aqua;
   top: 30px;
   bottom: 30px;
   left: calc(100% - 6px);
   right: 0;
 }
 .Amenities-1 .image-wrap .img-fluid {
-  margin-left: 5px;
   margin-bottom: 15px;
+  height: 110px;
+}
+.Amenities-1 .image-wrap h3 {
+  font-size: 14.5px;
+  font-family: 'poppins', sans-serif;
+  color: #fff;
 }
 
 .vertical-pipe {
@@ -158,6 +176,7 @@
 }
 .locality {
   text-align: center;
+  margin-bottom: 50px;
 }
 .locality h2 {
   color: aliceblue;
@@ -183,11 +202,14 @@
   font-size: 22px;
   font-style: italic;
 }
-.download{
+.download {
   text-decoration: none;
-  padding:10px;
-  margin:20px auto !important;
-
+  padding: 12px;
+  width: 260px;
+  margin: 25px auto;
+}
+.download:hover {
+  color: #fff;
 }
 
 .Enquiry {
@@ -214,11 +236,12 @@
   .content-head h2 {
     font-weight: 700;
     font-size: 13px;
+    margin: auto;
   }
   .content-head p {
     font-size: 6px;
     font-weight: 700;
-    line-height: 7px;
+    line-height: 7.5px;
     margin-bottom: 6px;
   }
   .Amenities-1 .image-wrap {
@@ -228,11 +251,14 @@
   .Amenities-1 .last-wrap-1::after {
     content: '';
     position: absolute;
-    background: white;
+    background: aqua;
     top: 30px;
     bottom: 30px;
     left: calc(100% - 6px);
     right: 0;
+  }
+  .schedule{
+    margin-top: 20px;
   }
   .Enquiry {
     max-width: 100%;

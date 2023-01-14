@@ -5,6 +5,7 @@ import './Ongoing.css';
 import Carousel from 'react-multi-carousel';
 import 'react-multi-carousel/lib/styles.css';
 import emailjs from '@emailjs/browser';
+import { Link } from 'react-router-dom';
 
 const Ongoing = () => {
   const responsive = {
@@ -165,7 +166,7 @@ const Ongoing = () => {
           keyBoardControl={false}
           centerMode={false}>
           <div className='elevation'>
-            <div className='row justify-content-between'>
+            <div className='row'>
               <div className='col-md-6 isomatrix'>
                 <img
                   src={require('../../../Assets/1 BHK.png')}
@@ -173,7 +174,7 @@ const Ongoing = () => {
                   className='img-fluid'
                 />
               </div>
-              <div className='col-md-6'>
+              <div className='col-md-6 isomatrix-details '>
                 <div className='layout-details'>
                   <ul className='details'>
                     Shiv paradsdd 1 BHK Apartment
@@ -188,7 +189,7 @@ const Ongoing = () => {
                   </ul>
                   <h2>Available Offers :</h2>
                   <ul className='details'>
-                    <li>Spot ₹ 2 Lacs Spot Discount & Assured Gifts</li>
+                    <li>Spot ₹ 2 Lacs Spot Discount</li>
                     <li>90% Loan Available from All Leading banks</li>
                     <li>No Additional GST, Stamp Duty & Ragistration</li>
                   </ul>
@@ -223,7 +224,7 @@ const Ongoing = () => {
                   </ul>
                   <h2>Available Offers :</h2>
                   <ul className='details'>
-                    <li>Spot ₹ 2 Lacs Spot Discount & Assured Gifts</li>
+                    <li>Spot ₹ 2 Lacs Spot Discount</li>
                     <li>90% Loan Available from All Leading banks</li>
                     <li>No Additional GST, Stamp Duty & Ragistration</li>
                   </ul>
@@ -270,6 +271,7 @@ const Ongoing = () => {
               className='img-fluid'
               alt=''
             />
+            <h3>GARDAN</h3>
           </div>
           <div className='image-wrap last-wrap-1'>
             <img
@@ -277,6 +279,7 @@ const Ongoing = () => {
               className='img-fluid'
               alt=''
             />
+            <h3>SENIOR CITIZEN AREA</h3>
           </div>
           <div className='image-wrap'>
             <img
@@ -284,6 +287,7 @@ const Ongoing = () => {
               className='img-fluid'
               alt=''
             />
+            <h3>CLUB HOUSE</h3>
           </div>
           <div className='image-wrap last-wrap-1'>
             <img
@@ -291,6 +295,7 @@ const Ongoing = () => {
               className='img-fluid'
               alt=''
             />
+            <h3>KIDS PLAY AREA</h3>
           </div>
           <div className='image-wrap'>
             <img
@@ -298,6 +303,7 @@ const Ongoing = () => {
               className='img-fluid'
               alt=''
             />
+            <h3>JOGGING TRACK</h3>
           </div>
           <div className='image-wrap last-wrap'>
             <img
@@ -305,16 +311,17 @@ const Ongoing = () => {
               className='img-fluid'
               alt=''
             />
+            <h3>AMPLE CAR PARKING</h3>
           </div>
         </div>
       </div>
       <div className='container-fluid locality'>
         <div className='row'>
           <div className='col-md-7 col-sm-12'>
+            <h2>
+              Location <span>highlights</span>
+            </h2>
             <ul>
-              <h2>
-                Location <span>highlights</span>
-              </h2>
               <p className='highlight-tag'>
                 Shiv Paradise is in a location where everything is accessible.
               </p>
@@ -359,16 +366,16 @@ const Ongoing = () => {
                     Dmart Badlapur - <span>4 Km</span>
                   </li>
                 </div>
+                <a
+                  href={require('../../../Assets/shiv-paradise.pdf')}
+                  // target='_blank'
+                  className='tag-button download'
+                  // rel='noreferrer'
+                  download={'shiv Paradise'}>
+                  Download Broucher
+                </a>
               </div>
             </ul>
-            <a
-              href='../../../Assets/Shiv Paradise.pdf'
-              target='_blank'
-              className='tag-button download'
-              rel='noreferrer'
-              download={'shiv Paradise'}>
-              Download Broucher
-            </a>
           </div>
           <div className='col-md-5 col-sm-12'>
             <h2>
