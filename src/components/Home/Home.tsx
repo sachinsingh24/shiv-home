@@ -76,11 +76,11 @@ const Home = () => {
         <div className='row'>
           <div className='col-12 col-lg-12 col-sm-12'>
             <div className='tags animated fadeInLeft'>
-              {/* <img
+              <img
                 src={require('../../Assets/Shiv_Paradise_logo.png')}
                 alt=''
                 className='img-fluid'
-              /> */}
+              />
               <h2 className='pt-3 pb-3'>Experience The Paradise life</h2>
               <Link to='/Project_OnGoing'>
                 <button className='tag-button'> Explore Now </button>
