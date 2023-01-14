@@ -202,7 +202,7 @@ const Ongoing = () => {
             </div>
           </div>
           <div className='elevation'>
-            <div className='row justify-content-between'>
+            <div className='row'>
               <div className='col-md-6 isomatrix'>
                 <img
                   src={require('../../../Assets/2 BHK.png')}
@@ -210,7 +210,7 @@ const Ongoing = () => {
                   className='img-fluid'
                 />
               </div>
-              <div className='col-md-6'>
+              <div className='col-md-6 isomatrix-details'>
                 <div className='layout-details'>
                   <ul>
                     Shiv paradise 1 BHK Apartment

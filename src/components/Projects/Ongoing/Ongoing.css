@@ -65,8 +65,7 @@
 .isomatrix-details {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
-  align-items: center;
+  justify-content: space-around;
 }
 .layout-details ul {
   text-align: left;
@@ -97,8 +96,10 @@
 }
 .schedule {
   width: 75%;
+   margin: auto;
   margin-bottom: 5px;
   box-shadow: 0 4px 7px 0 rgb(49 196 190 / 75%);
+
 }
 .line-through {
   text-decoration: line-through;
@@ -259,6 +260,7 @@
   }
   .schedule{
     margin-top: 20px;
+    margin-bottom: 5px;
   }
   .Enquiry {
     max-width: 100%;
