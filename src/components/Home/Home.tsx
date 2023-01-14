@@ -79,6 +79,7 @@ const Home = () => {
               <img
                 src={require('../../Assets/Shiv_Paradise_logo.png')}
                 alt=''
+                className='img-fluid'
               />
               <h2 className='pt-3 pb-3'>Experience The Paradise life</h2>
               <Link to='/Project_OnGoing'>
