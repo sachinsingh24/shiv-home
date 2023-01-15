@@ -6,7 +6,6 @@ import Carousel from 'react-multi-carousel';
 import 'react-multi-carousel/lib/styles.css';
 import emailjs from '@emailjs/browser';
 
-
 const Ongoing = () => {
   const responsive = {
     superLargeDesktop: {
@@ -73,11 +72,11 @@ const Ongoing = () => {
           id='myVideo'
           data-type='text/html'
           src={
-            'https://www.youtube.com/embed/67FuGWBHMAg?vq=hd1080&autoplay=1&loop=1&modestbranding=1&rel=0&iv_load_policy=3&fs=0&controls=1&disablekb=1&mute=1&playlist=67FuGWBHMAg'
+            'https://www.youtube.com/embed/Ph-KhO7HlKU?vq=hd1080&autoplay=1&loop=1&modestbranding=1&rel=0&iv_load_policy=3&fs=0&controls=1&disablekb=1&mute=1&playlist=Ph-KhO7HlKU'
           }
           allow='fullscreen; accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture full'
           frameBorder={'0'}
-          allowFullScreen={true}></iframe>
+          allowfullscreen={true}></iframe>
       </div>
 
       {/* </video> */}
