@@ -13,16 +13,23 @@
 } */
 .embed-responsive-item {
   position: relative;
+  height: 0;
+  overflow: hidden;
   z-index: 1;
-  height: 100vh;
-  width: 100%;
+  padding-top: 30px;
+  padding-bottom: 50%;
   /* pointer-events: none; */
 }
 .embed-responsive-item iframe {
-  min-height: calc(100vh + 23%);
-  min-width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: calc(100% + 65px);
+  width: 100%;
   pointer-events: none;
-  object-fit: cover;
+  object-fit: contain;
 }
 
 .banner-head-ongoing {
@@ -294,14 +301,9 @@
   .Enquiry {
     max-width: 100%;
   }
-  .embed-responsive-item {
-  height: 100%;
-  width: 100%;
-}
-.embed-responsive-item iframe {
-  min-height: 320px;
-  min-width: 100%;
 
+.embed-responsive-item iframe {
+    height: calc(100% + 50px);
 }
 }
 @media (min-width: 575.5px) and (max-width: 786px) {

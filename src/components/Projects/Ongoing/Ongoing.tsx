@@ -73,7 +73,7 @@ const Ongoing = () => {
           id='myVideo'
           data-type='text/html'
           src={
-            'https://www.youtube.com/embed/67FuGWBHMAg?vq=hd1080&autoplay=1&loop=1&modestbranding=1&rel=0&iv_load_policy=3&fs=0&controls=0&disablekb=1&mute=1&playlist=67FuGWBHMAg'
+            'https://www.youtube.com/embed/67FuGWBHMAg?vq=hd1080&autoplay=1&loop=1&modestbranding=1&rel=0&iv_load_policy=3&fs=0&controls=1&disablekb=1&mute=1&playlist=67FuGWBHMAg'
           }
           allow='fullscreen; accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture full'
           frameBorder={'0'}
