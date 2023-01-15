@@ -75,8 +75,7 @@ const Ongoing = () => {
             'https://www.youtube.com/embed/Ph-KhO7HlKU?vq=hd1080&autoplay=1&loop=1&modestbranding=1&rel=0&iv_load_policy=3&fs=0&controls=1&disablekb=1&mute=1&playlist=Ph-KhO7HlKU'
           }
           allow='fullscreen; accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture full'
-          frameBorder={'0'}
-          allowfullscreen={true}></iframe>
+          frameBorder={'0'}></iframe>
       </div>
 
       {/* </video> */}
