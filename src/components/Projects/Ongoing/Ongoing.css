@@ -17,7 +17,7 @@
   overflow: hidden;
   z-index: 1;
   padding-top: 30px;
-  padding-bottom: 50%;
+  padding-bottom: 47%;
   /* pointer-events: none; */
 }
 .embed-responsive-item iframe {
@@ -26,10 +26,10 @@
   left: 0;
   right: 0;
   bottom: 0;
-  height: calc(100% + 55px);
+  height: calc(100% + 90px);
   width: 100%;
   pointer-events: none;
-  object-fit: contain;
+  /* object-fit: cover; */
 }
 
 .banner-head-ongoing {
@@ -82,7 +82,6 @@
   color: aliceblue;
   font-family: 'poppins', sans-serif;
   font-size: 50px;
-  font-style: italic;
   margin: 20px auto;
   vertical-align: middle;
 }
@@ -95,8 +94,9 @@
 }
 .isomatrix img {
   width: 100%;
-  height: auto;
+  height: 100%;
   margin: auto;
+  border: 4px solid aqua;
 }
 .isomatrix-details {
   display: flex;
@@ -132,7 +132,7 @@
 }
 .schedule {
   width: 75%;
-  margin: 0 auto 5px auto;
+  margin: 10px auto 5px auto;
   box-shadow: 0 4px 7px 0 rgb(49 196 190 / 75%);
 }
 .line-through {
@@ -295,6 +295,9 @@
     left: calc(100% - 6px);
     right: 0;
   }
+  .layout-details ul{
+    font-size: 25px;
+  }
   .schedule {
     margin: 20px auto 5px auto;
   }
@@ -303,7 +306,7 @@
   }
 
 .embed-responsive-item iframe {
-    height: calc(100% + 50px);
+    height: calc(100% + 25px);
 }
 }
 @media (min-width: 575.5px) and (max-width: 786px) {

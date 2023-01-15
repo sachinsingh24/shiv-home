@@ -51,21 +51,7 @@ const Ongoing = () => {
   };
 
   return (
-    <section
-    // style={{ backgroundColor: '#232741' }}
-    >
-      {/* <iframe
-        title='This is a unique title'
-        data-type='text/html'
-        src={
-          'https://drive.google.com/file/d/1b6eZ1DhZBOA8cYWXgrRmtXTEjT5AumRP/preview'
-        }
-        allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture full'
-        min-width={'100%'}
-        min-height={'100%'}
-        className='embed-responsive-item'
-        allowFullScreen></iframe> */}
-      {/* <video loop id='myVideo'> */}
+    <section>
       <div className='embed-responsive-item'>
         <iframe
           title='This is a unique title'
@@ -77,8 +63,6 @@ const Ongoing = () => {
           allow='fullscreen; accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture full'
           frameBorder={'0'}></iframe>
       </div>
-
-      {/* </video> */}
       <div className='banner-head-ongoing'>
         <img src={require('../../../Assets/Landing Page.png')} alt='' />
         <div className='content-head'>
@@ -190,15 +174,17 @@ const Ongoing = () => {
               <div className='col-md-6 isomatrix-details '>
                 <div className='layout-details'>
                   <ul className='details'>
-                    Shiv paradsdd 1 BHK Apartment
-                    {/* <li>Shiv paradsdd 1 BHK Apartment</li> */}
-                    <li>Typology : 1 BHK Apartment</li>
-                    <li>Carpet Area : 410 Sq.ft </li>
-                    <li>Living Size : 14'9" x 9'00"</li>
-                    <li>kitchen : 7'30" X 7'10"</li>
-                    <li>Bedroom : 9'00" x 11'00"</li>
-                    <li>Price : ₹ 26.00 Lacs</li>
-                    <li className='line-through'>Price : ₹ 28.00 Lacs</li>
+                    <li className='fs-2 fw-bold'>
+                      Shiv Paradise 2 BHK Apartment
+                    </li>
+                    <li>Typology : 2 BHK Apartment</li>
+                    <li>Carpet Area : 563 Sq.ft </li>
+                    <li>Living Size : 15'0" x 9'50"</li>
+                    <li>Kitchen : 7'0" X 8'6"</li>
+                    <li>Bedroom : 9'00" x 10'00"</li>
+                    <li>Master Bedroom : 9'00" x 11'40"</li>
+                    <li>Price : ₹ 38.00 Lacs</li>
+                    <li className='line-through'>Price : ₹ 40.00 Lacs</li>
                   </ul>
                   <h2>Available Offers :</h2>
                   <ul className='details'>
@@ -226,11 +212,13 @@ const Ongoing = () => {
               <div className='col-md-6 isomatrix-details'>
                 <div className='layout-details'>
                   <ul>
-                    Shiv paradise 1 BHK Apartment
+                    <li className='fs-2 fw-bold'>
+                      Shiv Paradise 1 BHK Apartment
+                    </li>
                     <li>Typology : 1 BHK Apartment</li>
                     <li>Carpet Area : 410 Sq.ft </li>
                     <li>Living Size : 14'9" x 9'00"</li>
-                    <li>kitchen : 7'30" X 7'10"</li>
+                    <li>Kitchen : 7'30" X 7'10"</li>
                     <li>Bedroom : 9'00" x 11'00"</li>
                     <li>Price : ₹ 26.00 Lacs</li>
                     <li className='line-through'>Price : ₹ 28.00 Lacs</li>
