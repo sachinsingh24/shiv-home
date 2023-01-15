@@ -2,11 +2,10 @@
     position: relative;
     object-fit: cover;
     margin: 0;
-
     height: 300px;
     text-align: center;
     font-weight: 100;
-    background-color: #232741;
+    background-color: transparent;
     -webkit-overflow-x: visible;
     -moz-overflow-x: visible;
     -o-overflow-x: visible;
@@ -16,7 +15,9 @@
     -o-animation: fadeIn 1 5s ease-out;
     animation: fadeIn 1 5s ease-out;
 }
-
+.BG-blue{
+  background-color: #232741;
+}
 
 
 .light {

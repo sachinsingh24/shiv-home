@@ -40,7 +40,18 @@ function App() {
         <Route path='About' element={<About />} />
         <Route path='Contact_Us' element={<Contact />} />
         <Route path='Project_completed' element={<ProjectCom />} />
-        <Route path='Project_OnGoing' element={<ProjectOnGoing />} />
+        <Route
+          path='Project_OnGoing'
+          element={
+            <>
+              <Particles
+                options={particlesOptions as ISourceOptions}
+                init={particlesInit}
+              />{' '}
+              <ProjectOnGoing />
+            </>
+          }
+        />
       </Routes>
       <Footer />
     </div>

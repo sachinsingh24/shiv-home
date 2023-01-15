@@ -5,6 +5,7 @@ body {
   font-family:'Poppins',sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: #232741;
 }
 
 code {
@@ -13,6 +14,7 @@ code {
 }
 html{
 --white-gray:#f8f9fa;
+--bs-blue: #232741;
 }
 p{
   color: var(--white-gray) !important;

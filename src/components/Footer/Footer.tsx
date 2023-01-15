@@ -16,7 +16,7 @@ const Footer = () => {
       <div className='light x7'></div>
       <div className='light x8'></div>
       <div className='light x9'></div>
-      <div className='container' style={{ backgroundColor: '#232741' }}>
+      <div className='container'>
         <div className='bottom-area'>
           <div className='row'>
             <div className='col-6 col-md-6 col-sm-12'>

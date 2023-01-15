@@ -10,13 +10,11 @@ import emailjs from '@emailjs/browser';
 const Ongoing = () => {
   const responsive = {
     superLargeDesktop: {
-      // the naming can be any, depends on you.
       breakpoint: { max: 4000, min: 3000 },
       items: 1,
     },
     desktop: {
       breakpoint: { max: 3000, min: 1024 },
-
       items: 1,
     },
     tablet: {
@@ -54,7 +52,9 @@ const Ongoing = () => {
   };
 
   return (
-    <section style={{ backgroundColor: '#232741' }}>
+    <section
+    // style={{ backgroundColor: '#232741' }}
+    >
       {/* <iframe
         title='This is a unique title'
         data-type='text/html'
@@ -66,6 +66,21 @@ const Ongoing = () => {
         min-height={'100%'}
         className='embed-responsive-item'
         allowFullScreen></iframe> */}
+      {/* <video loop id='myVideo'> */}
+      <div className='embed-responsive-item'>
+        <iframe
+          title='This is a unique title'
+          id='myVideo'
+          data-type='text/html'
+          src={
+            'https://www.youtube.com/embed/67FuGWBHMAg?vq=hd1080&autoplay=1&loop=1&modestbranding=1&rel=0&iv_load_policy=3&fs=0&controls=0&disablekb=1&mute=1&playlist=67FuGWBHMAg'
+          }
+          allow='fullscreen; accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture full'
+          frameBorder={'0'}
+          allowFullScreen={true}></iframe>
+      </div>
+
+      {/* </video> */}
       <div className='banner-head-ongoing'>
         <img src={require('../../../Assets/Landing Page.png')} alt='' />
         <div className='content-head'>
@@ -115,35 +130,35 @@ const Ongoing = () => {
           autoPlay={true}
           keyBoardControl={false}
           centerMode={false}>
-          <div className='elevation'>
+          <div className='elevation-1'>
             <img
               src={require('../../../Assets/Front Elevation.png')}
               alt=''
               className='img-fluid'
             />
           </div>
-          <div className='elevation'>
+          <div className='elevation-1'>
             <img
               src={require('../../../Assets/Gate Elevation.png')}
               alt=''
               className='img-fluid'
             />
           </div>
-          <div className='elevation'>
+          <div className='elevation-1'>
             <img
               src={require('../../../Assets/Inside Elevation.png')}
               alt=''
               className='img-fluid'
             />
           </div>
-          <div className='elevation'>
+          <div className='elevation-1'>
             <img
               src={require('../../../Assets/Side Elevation.png')}
               alt=''
               className='img-fluid'
             />
           </div>
-          <div className='elevation'>
+          <div className='elevation-1'>
             <img
               src={require('../../../Assets/Top Elevation.png')}
               alt=''
@@ -461,6 +476,5 @@ const Ongoing = () => {
     </section>
   );
 };
-
 
 export default Ongoing;
