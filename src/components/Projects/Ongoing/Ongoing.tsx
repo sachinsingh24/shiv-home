@@ -69,6 +69,9 @@ const Ongoing = () => {
           playing={true}
           loop={true}
           controls={false}
+          pip={true}
+          playsinline={true}
+          playbackRate={1}
         />
       </div>
       <div className='banner-head-ongoing'>
