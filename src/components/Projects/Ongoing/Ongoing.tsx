@@ -6,7 +6,7 @@ import Carousel from 'react-multi-carousel';
 import 'react-multi-carousel/lib/styles.css';
 import emailjs from '@emailjs/browser';
 // import ReactPlayer from 'react-player';
-import YouTube from 'react-youtube';
+import YouTube, { YouTubeProps } from 'react-youtube';
 
 const Ongoing = () => {
   const responsive = {
@@ -51,11 +51,11 @@ const Ongoing = () => {
         }
       );
   };
-  const _onReady = (event: any) => {
+  const onPlayerReady: YouTubeProps['onReady'] = (event) => {
     event.target.mute();
     event.target.playVideo();
   };
-  const videoOptions = {
+  const opts: YouTubeProps['opts'] = {
     playerVars: {
       autoplay: 1,
       controls: 0,
@@ -72,7 +72,7 @@ const Ongoing = () => {
   return (
     <section>
       <div className='embed-responsive-item'>
-        <YouTube videoId='Ph-KhO7HlKU' opts={videoOptions} onReady={_onReady} />
+        <YouTube videoId='Ph-KhO7HlKU' opts={opts} onReady={onPlayerReady} />
         {/* <iframe
           title='This is a unique title'
           id='myVideo'
