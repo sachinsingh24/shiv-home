@@ -59,7 +59,7 @@ const Ongoing = () => {
     playerVars: {
       autoplay: 1,
       controls: 0,
-      rel: 0,
+      rel: 1,
       showinfo: 1,
       mute: 1,
       loop: 1,
