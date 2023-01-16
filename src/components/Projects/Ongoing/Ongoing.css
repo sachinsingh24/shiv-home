@@ -13,23 +13,24 @@
 } */
 .embed-responsive-item {
   position: relative;
-  height: 0;
+  /* height: 0; */
   overflow: hidden;
   z-index: 1;
   padding-top: 30px;
   padding-bottom: 47%;
   /* pointer-events: none; */
 }
-.embed-responsive-item iframe {
+
+.embed-responsive-item div {
   position: absolute;
   top: 0;
   left: 0;
   right: 0;
   bottom: 0;
-  height: calc(100% + 90px);
-  width: 100%;
+  height: calc(100% + 45px) !important;
+  width: 100% !important;
   pointer-events: none;
-  /* object-fit: cover; */
+
 }
 
 .banner-head-ongoing {
@@ -305,8 +306,8 @@
     max-width: 100%;
   }
 
-.embed-responsive-item iframe {
-    height: calc(100% + 25px);
+.embed-responsive-item div {
+    height: calc(100% + 0px) !important;
 }
 }
 @media (min-width: 575.5px) and (max-width: 786px) {

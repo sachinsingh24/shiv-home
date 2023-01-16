@@ -5,6 +5,7 @@ import './Ongoing.css';
 import Carousel from 'react-multi-carousel';
 import 'react-multi-carousel/lib/styles.css';
 import emailjs from '@emailjs/browser';
+import ReactPlayer from 'react-player';
 
 const Ongoing = () => {
   const responsive = {
@@ -53,15 +54,22 @@ const Ongoing = () => {
   return (
     <section>
       <div className='embed-responsive-item'>
-        <iframe
+        {/* <iframe
           title='This is a unique title'
           id='myVideo'
           data-type='text/html'
           src={
-            'https://www.youtube.com/embed/Ph-KhO7HlKU?vq=hd1080&autoplay=1&loop=1&modestbranding=1&rel=0&iv_load_policy=3&fs=0&controls=1&disablekb=1&mute=1&playlist=Ph-KhO7HlKU'
+            'https://www.youtube.com/embed/Ph-KhO7HlKU?vq=hd1080&autoplay=1&loop=1&playsinline=1&modestbranding=1&rel=0&iv_load_policy=3&fs=0&controls=1&disablekb=1&mute=1&playlist=Ph-KhO7HlKU'
           }
           allow='fullscreen; accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture full'
-          frameBorder={'0'}></iframe>
+          frameBorder={'0'}>
+          </iframe> */}
+        <ReactPlayer
+          url='https://www.youtube.com/watch?v=Ph-KhO7HlKU'
+          playing={true}
+          loop={true}
+          controls={false}
+        />
       </div>
       <div className='banner-head-ongoing'>
         <img src={require('../../../Assets/Landing Page.png')} alt='' />
@@ -171,20 +179,19 @@ const Ongoing = () => {
                   className='img-fluid'
                 />
               </div>
-              <div className='col-md-6 isomatrix-details '>
+              <div className='col-md-6 isomatrix-details'>
                 <div className='layout-details'>
-                  <ul className='details'>
+                  <ul>
                     <li className='fs-2 fw-bold'>
-                      Shiv Paradise 2 BHK Apartment
+                      Shiv Paradise 1 BHK Apartment
                     </li>
-                    <li>Typology : 2 BHK Apartment</li>
-                    <li>Carpet Area : 563 Sq.ft </li>
-                    <li>Living Size : 15'0" x 9'50"</li>
-                    <li>Kitchen : 7'0" X 8'6"</li>
-                    <li>Bedroom : 9'00" x 10'00"</li>
-                    <li>Master Bedroom : 9'00" x 11'40"</li>
-                    <li>Price : ₹ 38.00 Lacs</li>
-                    <li className='line-through'>Price : ₹ 40.00 Lacs</li>
+                    <li>Typology : 1 BHK Apartment</li>
+                    <li>Carpet Area : 410 Sq.ft </li>
+                    <li>Living Size : 14'9" x 9'0"</li>
+                    <li>Kitchen : 7'3" X 7'1"</li>
+                    <li>Bedroom : 9'0" x 11'0"</li>
+                    <li>Price : ₹ 26.00 Lacs</li>
+                    <li className='line-through'>Price : ₹ 28.00 Lacs</li>
                   </ul>
                   <h2>Available Offers :</h2>
                   <ul className='details'>
@@ -209,19 +216,20 @@ const Ongoing = () => {
                   className='img-fluid'
                 />
               </div>
-              <div className='col-md-6 isomatrix-details'>
+              <div className='col-md-6 isomatrix-details '>
                 <div className='layout-details'>
-                  <ul>
+                  <ul className='details'>
                     <li className='fs-2 fw-bold'>
-                      Shiv Paradise 1 BHK Apartment
+                      Shiv Paradise 2 BHK Apartment
                     </li>
-                    <li>Typology : 1 BHK Apartment</li>
-                    <li>Carpet Area : 410 Sq.ft </li>
-                    <li>Living Size : 14'9" x 9'00"</li>
-                    <li>Kitchen : 7'30" X 7'10"</li>
-                    <li>Bedroom : 9'00" x 11'00"</li>
-                    <li>Price : ₹ 26.00 Lacs</li>
-                    <li className='line-through'>Price : ₹ 28.00 Lacs</li>
+                    <li>Typology : 2 BHK Apartment</li>
+                    <li>Carpet Area : 563 Sq.ft </li>
+                    <li>Living Size : 15'0" x 9'5"</li>
+                    <li>Kitchen : 7'0" X 8'6"</li>
+                    <li>Bedroom : 9'0" x 10'0"</li>
+                    <li>Master Bedroom : 9'0" x 11'4"</li>
+                    <li>Price : ₹ 38.00 Lacs</li>
+                    <li className='line-through'>Price : ₹ 40.00 Lacs</li>
                   </ul>
                   <h2>Available Offers :</h2>
                   <ul className='details'>
