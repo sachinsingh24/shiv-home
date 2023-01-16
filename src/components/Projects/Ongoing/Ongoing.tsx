@@ -5,7 +5,8 @@ import './Ongoing.css';
 import Carousel from 'react-multi-carousel';
 import 'react-multi-carousel/lib/styles.css';
 import emailjs from '@emailjs/browser';
-import ReactPlayer from 'react-player';
+// import ReactPlayer from 'react-player';
+import YouTube from 'react-youtube';
 
 const Ongoing = () => {
   const responsive = {
@@ -50,10 +51,28 @@ const Ongoing = () => {
         }
       );
   };
+  const _onReady = (event: any) => {
+    event.target.mute();
+    event.target.playVideo();
+  };
+  const videoOptions = {
+    playerVars: {
+      autoplay: 1,
+      controls: 0,
+      rel: 0,
+      showinfo: 1,
+      mute: 1,
+      loop: 1,
+      playlist: 'Ph-KhO7HlKU',
+      modestbranding: 1,
+      playsinline: 1,
+    },
+  };
 
   return (
     <section>
       <div className='embed-responsive-item'>
+        <YouTube videoId='Ph-KhO7HlKU' opts={videoOptions} onReady={_onReady} />
         {/* <iframe
           title='This is a unique title'
           id='myVideo'
@@ -64,15 +83,31 @@ const Ongoing = () => {
           allow='fullscreen; accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture full'
           frameBorder={'0'}>
           </iframe> */}
-        <ReactPlayer
-          url='https://www.youtube.com/watch?v=Ph-KhO7HlKU'
+        {/* <ReactPlayer
+          onReady={_onReady}
+          url='https://www.youtube.com/embed/Ph-KhO7HlKU'
           playing={true}
           loop={true}
           controls={false}
           pip={true}
           playsinline={true}
           playbackRate={1}
-        />
+          config={{
+            youtube: {
+              playerVars: {
+                autoplay: 0,
+                controls: 0,
+                rel: 0,
+                showinfo: 1,
+                mute: 1,
+                loop: 0,
+                // playlist: 'Ph-KhO7HlKU',
+                modestbranding: 1,
+                playsinline: 1,
+              },
+            },
+          }}
+        /> */}
       </div>
       <div className='banner-head-ongoing'>
         <img src={require('../../../Assets/Landing Page.png')} alt='' />

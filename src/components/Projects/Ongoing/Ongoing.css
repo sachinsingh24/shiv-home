@@ -18,17 +18,17 @@
   z-index: 1;
   padding-top: 30px;
   padding-bottom: 47%;
-  /* pointer-events: none; */
+
 }
 
-.embed-responsive-item div {
+.embed-responsive-item iframe {
   position: absolute;
   top: 0;
   left: 0;
   right: 0;
   bottom: 0;
-  height: calc(100% + 45px) !important;
-  width: 100% !important;
+  height: calc(100% + 45px);
+  width: 100%;
   pointer-events: none;
       margin: auto
 
@@ -307,8 +307,8 @@
     max-width: 100%;
   }
 
-.embed-responsive-item div {
-    height: calc(100% + 8px) !important;
+.embed-responsive-item iframe {
+    height: calc(100% + 0px);
 }
 }
 @media (min-width: 575.5px) and (max-width: 786px) {
