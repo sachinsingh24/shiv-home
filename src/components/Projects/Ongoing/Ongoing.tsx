@@ -53,7 +53,7 @@ const Ongoing = () => {
   };
   const onPlayerReady: YouTubeProps['onReady'] = (event) => {
     event.target.mute();
-    // event.target.playVideo();
+    event.target.playVideo();
   };
   const opts: YouTubeProps['opts'] = {
     playerVars: {
