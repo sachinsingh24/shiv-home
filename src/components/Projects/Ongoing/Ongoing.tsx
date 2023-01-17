@@ -61,7 +61,7 @@ const Ongoing = () => {
       controls: 0,
       rel: 1,
       showinfo: 0,
-      mute: 1,
+      // mute: 1,
       loop: 1,
       vol: 0,
       playlist: 'Ph-KhO7HlKU',
