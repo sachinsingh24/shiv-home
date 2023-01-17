@@ -58,7 +58,7 @@ const Ongoing = () => {
           id='myVideo'
           data-type='text/html'
           src={
-            'https://player.vimeo.com/video/790041989?autoplay=1&loop=1&muted=1&quality=1080p&controls=1'
+            'https://player.vimeo.com/video/790041989?autoplay=1&loop=1&quality=1080p&controls=1'
             // 'https://www.youtube.com/embed/Ph-KhO7HlKU?vq=hd1080&autoplay=1&loop=1&playsinline=1&modestbranding=1&rel=0&iv_load_policy=3&fs=0&controls=1&disablekb=1&mute=0&playlist=Ph-KhO7HlKU'
           }
           allow='fullscreen; accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture full'
