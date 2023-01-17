@@ -57,15 +57,15 @@ const Ongoing = () => {
   };
   const opts: YouTubeProps['opts'] = {
     playerVars: {
-      // autoplay: 1,
-      // controls: 0,
-      // rel: 1,
-      // showinfo: 1,
-      // mute: 1,
-      // loop: 1,
-      // playlist: 'Ph-KhO7HlKU',
-      // modestbranding: 1,
-      // playsinline: 1,
+      autoplay: 1,
+      controls: 0,
+      rel: 1,
+      showinfo: 1,
+      mute: 1,
+      loop: 1,
+      playlist: 'Ph-KhO7HlKU',
+      modestbranding: 1,
+      playsinline: 1,
     },
   };
 
