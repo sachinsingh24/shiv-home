@@ -8,6 +8,11 @@ import emailjs from '@emailjs/browser';
 // import ReactPlayer from 'react-player';
 import YouTube, { YouTubeProps } from 'react-youtube';
 
+// interface youtubeProp {
+//   onReady: any;
+//   onStateChange: any;
+// }
+
 const Ongoing = () => {
   const responsive = {
     superLargeDesktop: {
@@ -51,32 +56,43 @@ const Ongoing = () => {
         }
       );
   };
-  const onPlayerReady: YouTubeProps['onReady'] = (event) => {
+  const onPlayerReady: YouTubeProps['onReady'] = (event: any) => {
     event.target.mute();
     event.target.playVideo();
   };
+  // const onPlayerfunc:YouTubeProps['onStateChange'] = (event: any) => {
+  //   console.log(event.data);
+  //   event.target.playVideo();
+  // };
   const opts: YouTubeProps['opts'] = {
     playerVars: {
       autoplay: 1,
-      controls: 0,
-      rel: 1,
-      showinfo: 0,
+      // controls: 0,
+      // rel: 1,
+      // showinfo: 0,
       // mute: 1,
-      loop: 1,
-      vol: 0,
-      playlist: 'Ph-KhO7HlKU',
-      modestbranding: 1,
+      // loop: 1,
+      // vol: 0,
+      // playlist: 'Ph-KhO7HlKU',
+      // modestbranding: 1,
       playsinline: 1,
-      autohide: 0,
-      cc_load_policy: 0,
-      iv_load_policy: 3,
+      // autohide: 0,
+      // cc_load_policy: 0,
+      // iv_load_policy: 3,
+      // enablejsapi: 1,
+      origin: 'https://www.youtube.com',
     },
   };
 
   return (
     <section>
       <div className='embed-responsive-item'>
-        <YouTube videoId='Ph-KhO7HlKU' opts={opts} onReady={onPlayerReady} />
+        <YouTube
+          videoId='Ph-KhO7HlKU'
+          opts={opts}
+          onReady={onPlayerReady}
+          // onStateChange={onPlayerfunc}
+        />
         {/* <iframe
           title='This is a unique title'
           id='myVideo'
@@ -85,32 +101,37 @@ const Ongoing = () => {
             'https://www.youtube.com/embed/Ph-KhO7HlKU?vq=hd1080&autoplay=1&loop=1&playsinline=1&modestbranding=1&rel=0&iv_load_policy=3&fs=0&controls=1&disablekb=1&mute=1&playlist=Ph-KhO7HlKU'
           }
           allow='fullscreen; accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture full'
-          frameBorder={'0'}>
-          </iframe> */}
+          frameBorder={'0'}></iframe> */}
         {/* <ReactPlayer
-          onReady={_onReady}
           url='https://www.youtube.com/embed/Ph-KhO7HlKU'
           playing={true}
-          loop={true}
-          controls={false}
-          pip={true}
-          playsinline={true}
-          playbackRate={1}
+          // loop={true}
+          // controls={false}
+          // pip={true}
+          // playsinline={true}
           config={{
             youtube: {
               playerVars: {
-                autoplay: 0,
-                controls: 0,
-                rel: 0,
-                showinfo: 1,
-                mute: 1,
-                loop: 0,
+                autoplay: 1,
+                // controls: 0,
+                // rel: 1,
+                // showinfo: 0,
+                // mute: 1,
+                // loop: 1,
+                // vol: 0,
                 // playlist: 'Ph-KhO7HlKU',
-                modestbranding: 1,
+                // modestbranding: 1,
                 playsinline: 1,
+                // autohide: 0,
+                // cc_load_policy: 0,
+                // iv_load_policy: 3,
+                // enablejsapi: 1,
+                // origin: window.location.origin,
               },
             },
           }}
+          onReady={onPlayerReady}
+          onStateChange={onPlayerfunc}
         /> */}
       </div>
       <div className='banner-head-ongoing'>
