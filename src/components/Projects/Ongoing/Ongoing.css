@@ -17,7 +17,6 @@
   overflow: hidden;
   z-index: 1;
   padding-bottom: 56.25%;
-
 }
 
 .embed-responsive-item iframe {
@@ -29,7 +28,7 @@
   height: 100%;
   width: 100%;
   margin: auto;
-  /* pointer-events: none; */
+  pointer-events: none;
 }
 
 .banner-head-ongoing {
@@ -305,9 +304,9 @@
     max-width: 100%;
   }
 
-  /* .embed-responsive-item iframe {
-    height: calc(100% + 0px);
-} */
+  .embed-responsive-item iframe {
+    pointer-events: all;
+  }
 }
 @media (min-width: 575.5px) and (max-width: 786px) {
   .content-head {
