@@ -53,19 +53,23 @@ const Ongoing = () => {
   };
   const onPlayerReady: YouTubeProps['onReady'] = (event) => {
     event.target.mute();
-    event.target.playVideo();
+    // event.target.playVideo();
   };
   const opts: YouTubeProps['opts'] = {
     playerVars: {
       autoplay: 1,
       controls: 0,
       rel: 1,
-      showinfo: 1,
+      showinfo: 0,
       mute: 1,
       loop: 1,
+      vol: 0,
       playlist: 'Ph-KhO7HlKU',
       modestbranding: 1,
       playsinline: 1,
+      autohide: 0,
+      cc_load_policy: 0,
+      iv_load_policy: 3,
     },
   };
 
