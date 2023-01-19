@@ -28,7 +28,7 @@
   height: 100%;
   width: 100%;
   margin: auto;
-  pointer-events: none;
+  /* pointer-events: none; */
 }
 
 .banner-head-ongoing {

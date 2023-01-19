@@ -33,10 +33,10 @@ const Ongoing = () => {
     event.target.reset();
     emailjs
       .sendForm(
-        'service_ko7o3uo',
-        'template_xk4jqr1',
+        'service_kd5re5o',
+        'template_tjqs146',
         form.current,
-        'gL-UD6RKxWqo5JX-b'
+        '0yGvz5KZoo86wObHh'
       )
       .then(
         (result: any) => {
@@ -64,6 +64,23 @@ const Ongoing = () => {
           allow='fullscreen; accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture full'
           frameBorder={'0'}></iframe>
       </div>
+      <div className='container below-video-tag '>
+        <div className='row justify-content-between'>
+          <div className='col-md-4'>
+            <div className='logo-under-add'>
+              <img
+                src={require('../../../Assets/Shiv Logo.png')}
+                alt=''
+                width={'200px'}
+              />
+              <p>Shirgoan, Badlapur (E) </p>
+            </div>
+          </div>
+          <div className='col-md-8'>
+            <div className='rera_tag'></div>
+          </div>
+        </div>
+      </div>
       <div className='banner-head-ongoing'>
         <img src={require('../../../Assets/Landing Page.png')} alt='' />
         <div className='content-head'>
@@ -83,23 +100,7 @@ const Ongoing = () => {
           </p>
         </div>
       </div>
-      <div className='container below-video-tag '>
-        <div className='row justify-content-between'>
-          <div className='col-md-4'>
-            <div className='logo-under-add'>
-              <img
-                src={require('../../../Assets/Shiv Logo.png')}
-                alt=''
-                width={'200px'}
-              />
-              <p>Shirgoan, Badlapur (E) </p>
-            </div>
-          </div>
-          <div className='col-md-8'>
-            <div className='rera_tag'></div>
-          </div>
-        </div>
-      </div>
+
       <div className='container-fluid text-center'>
         <Carousel
           responsive={responsive}
@@ -430,7 +431,7 @@ const Ongoing = () => {
                   type='text'
                   className='form-control'
                   id='mobile'
-                  name='from_subject'
+                  name='from_mobile'
                   aria-describedby='emailHelp'
                   placeholder='Enter Mobile No'
                 />
