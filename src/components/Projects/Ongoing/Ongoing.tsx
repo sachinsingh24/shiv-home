@@ -30,13 +30,12 @@ const Ongoing = () => {
   // const validateSubmitForm = () => {};
   const handleSubmit = (event: any) => {
     event.preventDefault();
-    event.target.reset();
     emailjs
       .sendForm(
-        'service_kd5re5o',
+        'shivhome_formid',
         'template_tjqs146',
         form.current,
-        '0yGvz5KZoo86wObHh'
+        'gf8rXDhegAr-dVvvL'
       )
       .then(
         (result: any) => {
@@ -48,6 +47,7 @@ const Ongoing = () => {
           window.alert('please try again...');
         }
       );
+    event.target.reset();
   };
 
   return (
@@ -100,7 +100,6 @@ const Ongoing = () => {
           </p>
         </div>
       </div>
-
       <div className='container-fluid text-center'>
         <Carousel
           responsive={responsive}
@@ -404,7 +403,7 @@ const Ongoing = () => {
                   className='form-control'
                   id='fname'
                   name='from_name'
-                  aria-describedby='emailHelp'
+                  aria-describedby='nameHelp'
                   placeholder='Enter Your Full  Name'
                 />
                 {/* <small className='text-danger font-weight-bold' id='nameError'>
@@ -428,11 +427,11 @@ const Ongoing = () => {
               <div className='form-group mb-1'>
                 <label htmlFor='mobile'> Mobile No</label>
                 <input
-                  type='text'
+                  type='number'
                   className='form-control'
                   id='mobile'
                   name='from_mobile'
-                  aria-describedby='emailHelp'
+                  aria-describedby='mobileHelp'
                   placeholder='Enter Mobile No'
                 />
                 {/* <small
