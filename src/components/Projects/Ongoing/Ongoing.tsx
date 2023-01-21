@@ -58,7 +58,7 @@ const Ongoing = () => {
           id='myVideo'
           data-type='text/html'
           src={
-            'https://player.vimeo.com/video/790041989?h=b545046987&autoplay=1&loop=1&title=0&byline=0&portrait=0&quality=1080p&playsinline=1'
+            'https://player.vimeo.com/video/790041989?h=b545046987&autoplay=1&loop=1&title=0&byline=0&portrait=0&quality=1080p&playsinline=1&pip=0'
             // 'https://www.youtube.com/embed/Ph-KhO7HlKU?vq=hd1080&autoplay=1&loop=1&playsinline=1&modestbranding=1&rel=0&iv_load_policy=3&fs=0&controls=1&disablekb=1&mute=0&playlist=Ph-KhO7HlKU'
           }
           allow='fullscreen; accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture full'
@@ -66,18 +66,42 @@ const Ongoing = () => {
       </div>
       <div className='container below-video-tag '>
         <div className='row justify-content-between'>
-          <div className='col-md-4'>
+          <div className='col-md-6 m-auto'>
             <div className='logo-under-add'>
               <img
-                src={require('../../../Assets/Shiv Logo.png')}
+                src={require('../../../Assets/Shiv Paradise logo.png')}
                 alt=''
+                className='imgg-fluid'
                 width={'200px'}
               />
               <p>Shirgoan, Badlapur (E) </p>
             </div>
           </div>
-          <div className='col-md-8'>
-            <div className='rera_tag'></div>
+          <div className='col-md-6 m-auto'>
+            <div className='rera-wrap-tag'>
+              <div className='rera_tag'>
+                <h2>COMFORT AND LUXURY AT BADLAPUR </h2>
+                <hr />
+                <h2>SPACIOUS 1 BHK / 2 BHK</h2>
+              </div>
+            </div>
+            <div className='rera-wrap'>
+              <div className='rera'>
+                <img src={require('../../../Assets/rera-logo.png')} alt='' />
+              </div>
+              <div className='rera-detail'>
+                <p className='rera-no'>
+                  Maharera Registration No. <span>P51700046607</span>
+                </p>
+                <p>
+                  Available at website :{' '}
+                  <a href='https://maharerait.mahaonline.gov.in/SearchList/Search'>
+                    {' '}
+                    maharerait.mahaonline.gov.in
+                  </a>
+                </p>
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -89,14 +113,14 @@ const Ongoing = () => {
             The shortest distance between paradise and the place you call home.
             Shiv Corporation has styled a living experience in Badlapur. The 1
             BHK and 2 BHK Spacious apartments in Shiv Paradise have been
-            meticulously designed to create the ultimate living experience
+            meticulously designed to create the ultimate living experience.
           </p>
           <p>
             Shiv Paradise is in a location where everything is accessible.
             Located near well-known Heaven Bell School. Here you are just 5
             minutes away from Panvel Highway, 10 minutes from Badlapur Station
             and 50 minutes away from the proposed Navi Mumbai International
-            Airport
+            Airport.
           </p>
         </div>
       </div>

@@ -17,7 +17,7 @@ html{
 --bs-blue: #232741;
 }
 p{
-  color: var(--white-gray) !important;
+  color: var(--white-gray);
 }
 
 /* width */

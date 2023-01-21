@@ -154,7 +154,6 @@ const Home = () => {
           </div>
         </div>
       </div>
-
       <div className='fluid-container carousel'>
         <h4 className='text-center mt-3 head-title'>Our Completed Projects</h4>
         <Carousel
@@ -189,23 +188,16 @@ const Home = () => {
           ))}
         </Carousel>
       </div>
-      <div className='container-fluid'>
-        <div className='row'>
-          <div className='col-md-12 m-auto'>
+      <div className='container-fluid p-0 mt-3'>
+        <div className='home-about-sec'>
+          <div className='home-about-img'>
             <img
               src={require('../../Assets/About us.png')}
               alt='About-us'
               className='img-fluid'
             />
-          </div>
-          <div className='col-md-5 m-auto'>
-            <div className='home-about-sec'>
-              <img
-                className='shiv_logo img-fluid'
-                src={require('../../Assets/Shiv Logo.png')}
-                alt='Shiv-corporation'
-              />
-              <p className='Shiv_tag pt-3'>
+            <div className='home-about-tag'>
+              <p className='Shiv_tag'>
                 Great Things Never Come <br /> From Comfort Zones
               </p>
               <Link to='/About'>

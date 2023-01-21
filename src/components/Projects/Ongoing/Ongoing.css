@@ -34,6 +34,7 @@
 .banner-head-ongoing {
   position: relative;
   z-index: 1;
+  margin-bottom: 30px;
 }
 .banner-head-ongoing img {
   height: auto;
@@ -41,12 +42,52 @@
 }
 .logo-under-add {
   margin-top: 15px;
-  text-align: center;
+  text-align: left;
 }
 .logo-under-add p {
   margin-left: 45px;
 }
+.rera-wrap-tag {
+  display: flex;
+  justify-content: flex-end;
+}
 .rera_tag {
+  color: aliceblue;
+  width: 365px;
+  text-align: end;
+  margin-top: 10px;
+}
+.rera_tag h2 {
+  font-size: 20px;
+}
+.rera_tag hr {
+  margin: 7px 1px;
+  text-align: end;
+  border: 3px solid #fff;
+  opacity: 0.7;
+}
+.rera-wrap {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  margin-top: -15px;
+  margin-bottom: 10px;
+}
+.rera-detail {
+  margin-left: 10px;
+}
+.rera-detail p {
+  margin: 0;
+}
+.rera-detail p span {
+  font-weight: 700;
+}
+.rera-detail p a {
+  text-decoration: none;
+  color: aliceblue;
+}
+.rera-no {
+  font-size: 20px;
 }
 
 .content-head {
@@ -280,6 +321,9 @@
     font-weight: 700;
     line-height: 7.5px;
     margin-bottom: 6px;
+  }
+  .rera-wrap {
+    margin-top: 0;
   }
   .Amenities-1 .image-wrap {
     flex: 1 1 50%;
