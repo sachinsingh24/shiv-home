@@ -38,10 +38,10 @@ function App() {
           }
         />
         <Route path='About' element={<About />} />
-        <Route path='Contact_Us' element={<Contact />} />
-        <Route path='Project_completed' element={<ProjectCom />} />
+        <Route path='Contact' element={<Contact />} />
+        <Route path='Constructed' element={<ProjectCom />} />
         <Route
-          path='Project_OnGoing'
+          path='OnGoing'
           element={
             <>
               <Particles

@@ -4,10 +4,10 @@
   position: relative;
   object-fit: cover;
   margin: 0;
-  height: 300px;
+  /* height: 300px; */
   text-align: center;
   font-weight: 100;
-  background-color: transparent;
+  background-color: #232741;
   -webkit-overflow-x: visible;
   -moz-overflow-x: visible;
   -o-overflow-x: visible;
@@ -442,8 +442,12 @@
   margin: auto;
   padding: 10px;
 }
-.address p {
-  margin: auto;
+.address h4 {
+  color: aliceblue;
+font-size: 15px;
+}
+.address span {
+  text-align: left;
 }
 @media (max-width: 575.5px) {
   .social-icons {

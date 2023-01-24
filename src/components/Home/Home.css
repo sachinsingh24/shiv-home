@@ -1,13 +1,12 @@
 /** @format */
 
-
 .banner-sec img {
-      height: 100vh;
-    object-fit: cover;
-    position: relative;
-    width: 100%;
+  height: 100vh;
+  object-fit: cover;
+  position: relative;
+  width: 100%;
 }
-nav .navbar{
+nav .navbar {
   background-color: transparent;
 }
 .banner-tag {
@@ -26,7 +25,7 @@ nav .navbar{
   width: 200px;
   font-size: 20px;
   font-weight: 600;
- color: var(--white-gray);
+  color: var(--white-gray);
   cursor: pointer;
   /* margin: 20px; */
   height: 55px;
@@ -70,7 +69,7 @@ nav .navbar{
   display: flex;
   justify-content: center;
   padding: 10px;
-  margin:10px auto;
+  margin: 10px auto;
   height: 120px;
   width: 45%;
 }
@@ -91,7 +90,7 @@ nav .navbar{
 .odometer-value {
   font-family: 'Helvetica Neue', sans-serif;
   font-weight: 700;
-  color: var(--white-gray)
+  color: var(--white-gray);
 }
 .odo-text {
   font-size: 25px;
@@ -104,7 +103,7 @@ nav .navbar{
   text-align: center;
   margin: 15px auto 30px auto;
 }
-.testimonial h5 span{
+.testimonial h5 span {
   color: #101c81;
 }
 
@@ -147,20 +146,24 @@ nav .navbar{
   background-position: 100% 0;
 }
 
-.home-about-sec{
+.home-about-sec {
   position: relative;
   z-index: 1;
-
 }
-.home-about-tag{
+.home-about-tag {
   position: absolute;
-  top: 65%;
- right: 12%;
- bottom: 35%;
- text-align: center;
+  top: 18%;
+  right: 12%;
+  text-align: center;
 }
-.home-about-tag p{
-color: #2b2a29;
+.home-about-wrap{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 350px;
+}
+.home-about-tag p {
+  color: #2b2a29;
 }
 
 /*start fade animation */
@@ -220,16 +223,16 @@ button {
 .react-multi-carousel-track .react-multi-carousel-item {
   transition: all 0.3s ease-in-out;
 }
-.custom-dot-list-style{
+.custom-dot-list-style {
   margin-top: 20px;
 }
 .react-multi-carousel-dot-list {
-position: relative !important;
+  position: relative !important;
 }
 .react-multi-carousel-track .react-multi-carousel-item .card {
   padding: 10px;
   position: relative;
-  background-color:#f8f9fa;
+  background-color: #f8f9fa;
 }
 
 .img-card img {
@@ -308,14 +311,13 @@ position: relative !important;
   background: aquamarine !important;
 }
 @media (min-width: 575.5px) {
-
 }
 
 @media (max-width: 575.5px) {
-  .desktop-view{
+  .desktop-view {
     display: none;
   }
-  .mobile-view{
+  .mobile-view {
     display: block !important;
   }
   .contain-border {
@@ -332,7 +334,6 @@ position: relative !important;
 
   .banner-tag .tags {
     padding: 20px;
-
   }
   .banner-tag .tags img {
     width: 175px;
@@ -365,14 +366,17 @@ position: relative !important;
     margin-top: 5px;
   }
   .home-about-tag {
-    right: 5%;
+right: 0;
+top: 18%;
+left: 60%;
   }
-   .home-about-tag p {
+  .home-about-wrap{
+    height: 100px;
+  }
+  .home-about-tag p {
     font-size: 10px;
     margin: 0;
-  line-height: 10px;
-
+    line-height: 10px;
   }
-
 }
 /* end owl carousel */

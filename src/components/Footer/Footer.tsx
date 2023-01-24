@@ -16,7 +16,7 @@ const Footer = () => {
       <div className='light x7'></div>
       <div className='light x8'></div>
       <div className='light x9'></div>
-      <div className='container'>
+      <div className='container-fluid'>
         <div className='bottom-area'>
           <div className='row'>
             <div className='col-md-4 m-auto'>
@@ -28,10 +28,13 @@ const Footer = () => {
                 />
               </div>
               <div className='address fs-6 mb-2'>
-                <p>
-                  Address : Shiv Corporation, Ground floor, Chandan Apt, Katrap
-                  Road, Badlapur East.{' '}
-                </p>
+                <h4>
+                  Address :{' '}
+                  <span>
+                    Shiv Corporation, Ground floor, Chandan Apt, Katrap Road,
+                    Badlapur East.{' '}
+                  </span>
+                </h4>
                 {/* <p>ragistration No: 164513216543 </p> */}
               </div>
             </div>
@@ -47,13 +50,13 @@ const Footer = () => {
                     <Link to='/About'>About Us</Link>{' '}
                   </li>
                   <li>
-                    <Link to='/Project_completed'>Completed Projects</Link>{' '}
+                    <Link to='/Constructed'>Constructed</Link>{' '}
                   </li>
                   <li>
-                    <Link to='/Project_OnGoing'>Ongoing Projects</Link>{' '}
+                    <Link to='/OnGoing'>Ongoing</Link>{' '}
                   </li>
                   <li>
-                    <Link to='/Contact_Us'>Contact Us</Link>{' '}
+                    <Link to='/Contact'>Contact Us</Link>{' '}
                   </li>
                 </ul>
               </div>

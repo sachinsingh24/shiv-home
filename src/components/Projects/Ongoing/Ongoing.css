@@ -1,7 +1,6 @@
 /** @format */
 
-@import url('https://fonts.googleapis.com/css2?family=Italianno&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,300&display=swap');
+
 
 /* #myVideo {
   position: relative;
@@ -142,6 +141,10 @@
   display: flex;
   flex-direction: column;
   justify-content: space-around;
+}
+.layout-details-head{
+  font-size: 30px;
+  font-weight: 600;
 }
 .layout-details ul {
   text-align: left;
@@ -340,6 +343,12 @@
   }
   .layout-details ul {
     font-size: 25px;
+  }
+  .layout-details-head{
+    text-align: center;
+    font-size: 25px;
+    margin-top: 10px;
+    line-height: 30px;
   }
   .schedule {
     margin: 20px auto 5px auto;

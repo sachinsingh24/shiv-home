@@ -47,25 +47,22 @@ const nav_tab = () => {
                       Home
                     </Nav.Link>
                     <Nav.Link as={Link} to='/About' eventKey='2'>
-                      About
+                      About Us
                     </Nav.Link>
                     <NavDropdown
                       title='Projects'
                       id={`offcanvasNavbarDropdown-expand-${expand}`}>
                       <NavDropdown.Item
                         as={Link}
-                        to='/Project_completed'
+                        to='/Constructed'
                         eventKey='3'>
-                        Completed projects
+                        Constructed
                       </NavDropdown.Item>
-                      <NavDropdown.Item
-                        as={Link}
-                        to='/Project_OnGoing'
-                        eventKey='4'>
-                        Ongoing Projects
+                      <NavDropdown.Item as={Link} to='/OnGoing' eventKey='4'>
+                        Ongoing
                       </NavDropdown.Item>
                     </NavDropdown>
-                    <Nav.Link as={Link} to='/Contact_Us' eventKey='5'>
+                    <Nav.Link as={Link} to='/Contact' eventKey='5'>
                       Contact Us
                     </Nav.Link>
                   </Nav>

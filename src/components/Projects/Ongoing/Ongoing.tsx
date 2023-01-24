@@ -71,7 +71,7 @@ const Ongoing = () => {
               <img
                 src={require('../../../Assets/Shiv Paradise logo.png')}
                 alt=''
-                className='imgg-fluid'
+                className='img-fluid'
                 width={'200px'}
               />
               <p>Shirgoan, Badlapur (E) </p>
@@ -97,7 +97,7 @@ const Ongoing = () => {
                   Available at website :{' '}
                   <a href='https://maharerait.mahaonline.gov.in/SearchList/Search'>
                     {' '}
-                    maharerait.mahaonline.gov.in
+                    maharera.mahaonline.gov.in
                   </a>
                 </p>
               </div>
@@ -199,7 +199,7 @@ const Ongoing = () => {
               <div className='col-md-6 isomatrix-details'>
                 <div className='layout-details'>
                   <ul>
-                    <li className='fs-2 fw-bold'>
+                    <li className='layout-details-head'>
                       Shiv Paradise 1 BHK Apartment
                     </li>
                     <li>Typology : 1 BHK Apartment</li>
@@ -236,7 +236,7 @@ const Ongoing = () => {
               <div className='col-md-6 isomatrix-details '>
                 <div className='layout-details'>
                   <ul className='details'>
-                    <li className='fs-2 fw-bold'>
+                    <li className='layout-details-head'>
                       Shiv Paradise 2 BHK Apartment
                     </li>
                     <li>Typology : 2 BHK Apartment</li>

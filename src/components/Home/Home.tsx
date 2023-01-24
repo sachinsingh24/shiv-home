@@ -82,7 +82,7 @@ const Home = () => {
                 className='img-fluid'
               />
               <h2 className='pt-3 pb-3'>Experience The Paradise life</h2>
-              <Link to='/Project_OnGoing'>
+              <Link to='/OnGoing'>
                 <button className='tag-button'> Explore Now </button>
               </Link>
             </div>
@@ -197,12 +197,15 @@ const Home = () => {
               className='img-fluid'
             />
             <div className='home-about-tag'>
-              <p className='Shiv_tag'>
-                Great Things Never Come <br /> From Comfort Zones
-              </p>
-              <Link to='/About'>
-                <button className='tag-button shiv-btn'>About Us</button>
-              </Link>
+              <div className='home-about-wrap'>
+                <p className='Shiv_tag'>
+                  Great Things Never Come <br /> From Comfort Zones
+                </p>
+
+                <Link to='/About'>
+                  <button className='tag-button shiv-btn'>About Us</button>
+                </Link>
+              </div>
             </div>
           </div>
         </div>
