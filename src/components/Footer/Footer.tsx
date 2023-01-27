@@ -29,34 +29,32 @@ const Footer = () => {
               </div>
               <div className='address fs-6 mb-2'>
                 <h4>
-                  Address :{' '}
+                  Address :
                   <span>
                     Shiv Corporation, Ground floor, Chandan Apt, Katrap Road,
-                    Badlapur East.{' '}
+                    Badlapur East.
                   </span>
                 </h4>
-                {/* <p>ragistration No: 164513216543 </p> */}
               </div>
             </div>
             <div className='col-md-3 m-auto'>
               <div>
                 <ul className='Footer-Menu'>
-                  {' '}
                   <h4>Main Links</h4>
                   <li>
-                    <Link to='/'>Home</Link>{' '}
+                    <Link to='/'>Home</Link>
                   </li>
                   <li>
-                    <Link to='/About'>About Us</Link>{' '}
+                    <Link to='/About'>About Us</Link>
                   </li>
                   <li>
-                    <Link to='/Constructed'>Constructed</Link>{' '}
+                    <Link to='/Constructed'>Constructed</Link>
                   </li>
                   <li>
-                    <Link to='/OnGoing'>Ongoing</Link>{' '}
+                    <Link to='/OnGoing'>Ongoing</Link>
                   </li>
                   <li>
-                    <Link to='/Contact'>Contact Us</Link>{' '}
+                    <Link to='/Contact'>Contact Us</Link>
                   </li>
                 </ul>
               </div>
