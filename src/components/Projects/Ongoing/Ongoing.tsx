@@ -217,10 +217,11 @@ const Ongoing = () => {
                     <li>No Additional GST, Stamp Duty & Ragistration</li>
                   </ul>
                 </div>
-                <button className='tag-button schedule'>
-                  {' '}
-                  Schedule Your Site Visit Now
-                </button>
+                <a href='https://wa.me/917498683100?text=hello%2C%20%0AI%20am%20interested%20in%20Shiv%20Paradise%2C%20I%20Want%20To%20Schedule%20My%20Site%20Visit.'>
+                  <button className='tag-button schedule'>
+                    Schedule Your Site Visit Now
+                  </button>
+                </a>
               </div>
             </div>
           </div>
@@ -255,10 +256,11 @@ const Ongoing = () => {
                     <li>No Additional GST, Stamp Duty & Ragistration</li>
                   </ul>
                 </div>
-                <button className='tag-button schedule'>
-                  {' '}
-                  Schedule Your Site Visit Now
-                </button>
+                <a href='https://wa.me/917498683100?text=hello%2C%20%0AI%20am%20interested%20in%20Shiv%20Paradise%2C%20I%20Want%20To%20Schedule%20My%20Site%20Visit.'>
+                  <button className='tag-button schedule'>
+                    Schedule Your Site Visit Now
+                  </button>
+                </a>
               </div>
             </div>
           </div>
@@ -484,7 +486,6 @@ const Ongoing = () => {
           </div>
         </div>
       </div>
-
     </section>
   );
 };
