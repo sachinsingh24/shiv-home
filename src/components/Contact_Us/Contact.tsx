@@ -133,7 +133,7 @@ const Contact = () => {
             </div>
           </div>
           <div className='col-md-6 m-auto'>
-            <div className='border-1 rounded'>
+            <div className='border border-primary'>
               <iframe
                 title='map'
                 src='https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d942.1608105179728!2d73.23063772915908!3d19.167087565950762!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be792d50bd7649f%3A0x52c2a1ac5fbba378!2sJpu%20Group!5e0!3m2!1sen!2sin!4v1674720813544!5m2!1sen!2sin" width="600" height="450" style="border:1;"
