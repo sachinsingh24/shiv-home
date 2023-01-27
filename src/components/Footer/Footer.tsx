@@ -74,18 +74,21 @@ const Footer = () => {
                   alt=''
                 />
                 <div className='social-icons'>
-                  <img src={require('../../Assets/facebook (1).png')} alt='' />
-                  <img src={require('../../Assets/instagram (3).png')} alt='' />
-                  <img src={require('../../Assets/youtube.png')} alt='' />
+                  <img src={require('../../Assets/facebook.png')} alt='' />
+                  <img src={require('../../Assets/instagram.png')} alt='' />
                   <a
+                    className='m-auto'
                     href='https://wa.me/917498683100?text=hello%2C%20%0AI%20am%20interested%20in%20Shiv%20Paradise%20Please%20Share%20me%20More%20Details'
                     target='_blank'
                     rel='noreferrer'>
-                    <img
-                      src={require('../../Assets/whatsapp (1).png')}
-                      alt=''
-                    />
+                    <img src={require('../../Assets/whatsapp.png')} alt='' />
                   </a>
+                  <img
+                    src={require('../../Assets/youtube.png')}
+                    alt=''
+                    width='50px'
+                    height='40px'
+                  />
                 </div>
               </div>
             </div>

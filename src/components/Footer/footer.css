@@ -416,6 +416,7 @@
   font-weight: 400;
 }
 .social-icons {
+  width: 200px;
   margin: 15px auto;
   display: flex;
   flex-direction: row;
@@ -428,8 +429,6 @@
 }
 
 .CopyRight {
-  /* position: absolute;
-  bottom: 0; */
   width: 100%;
   background-color: rgb(194, 128, 52);
 }
@@ -439,7 +438,7 @@
 }
 .CopyRight p {
   margin: auto;
-  padding: 8px;
+  padding: 5px;
   font-size: 15px;
 }
 .address h4 {
