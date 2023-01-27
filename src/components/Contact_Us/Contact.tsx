@@ -36,18 +36,6 @@ const Contact = () => {
           <div className='row justify-content-center'>
             <div className='col-md-4 m-auto'>
               <img
-                src={require('../../Assets/JPU_Logo.png')}
-                alt=''
-                width='250px'
-                className='img-fluid mb-3'
-              />
-              <p style={{ color: 'black' }}>
-                Address :Shiv Corporation, Ground floor, Chandan Apt, Katrap
-                Road, Badlapur East.
-              </p>
-            </div>
-            <div className='col-md-4 m-auto'>
-              <img
                 src={require('../../Assets/Shiv Paradise logo.png')}
                 alt=''
                 width='300px'
@@ -58,17 +46,29 @@ const Contact = () => {
                 Maharashtra.
               </p>
             </div>
+            <div className='col-md-4 m-auto'>
+              <img
+                src={require('../../Assets/JPU_Logo.png')}
+                alt=''
+                width='250px'
+                className='img-fluid mb-3'
+              />
+              <p style={{ color: 'black' }}>
+                Address :Shiv Corporation, Ground floor, Chandan Apt, Katrap
+                Road, Badlapur East.
+              </p>
+            </div>
           </div>
         </div>
       </div>
       <div className='container '>
         <div className='row'>
           <div className='col-md-6 mb-3'>
-            <div className='Enquiry pb-3 pt-3'>
-              <h2 className='header-style'>Contact Form</h2>
+            <div className='Enquiry pb-3 pt-3 bg-secondary'>
+              <h2 className='header-style fs-3'>Contact Form</h2>
               <div className='enquiry-form'>
                 <form id='contactForm' ref={form} onSubmit={handleSubmit}>
-                  <div className='form-group mb-1'>
+                  <div className='form-group mb-1 text-light'>
                     <label htmlFor='fname'> Full Name</label>
                     <input
                       type='text'
