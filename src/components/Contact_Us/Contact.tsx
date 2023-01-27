@@ -56,6 +56,7 @@ const Contact = () => {
               <p style={{ color: 'black' }}>
                 Address :Shiv Corporation, Ground floor, Chandan Apt, Katrap
                 Road, Badlapur East.
+                <p>Email: jpugroup1986@gmail.com</p>
               </p>
             </div>
           </div>
