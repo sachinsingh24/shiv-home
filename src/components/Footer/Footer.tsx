@@ -16,10 +16,11 @@ const Footer = () => {
       <div className='light x7'></div>
       <div className='light x8'></div>
       <div className='light x9'></div>
+      <hr />
       <div className='container-fluid'>
         <div className='bottom-area'>
           <div className='row'>
-            <div className='col-md-4 m-auto'>
+            <div className='col-md-4 m-auto mb-3'>
               <div className='footer-logo'>
                 <img
                   src={require('../../Assets/Shiv Logo.png')}
@@ -27,13 +28,10 @@ const Footer = () => {
                   alt=''
                 />
               </div>
-              <div className='address fs-6 mb-2'>
+              <div className='address'>
                 <h4>
-                  Address :
-                  <span>
-                    Shiv Corporation, Ground floor, Chandan Apt, Katrap Road,
-                    Badlapur East.
-                  </span>
+                  Address : Shiv Corporation, Ground floor, Chandan Apt, Katrap
+                  Road, Badlapur East.
                 </h4>
               </div>
             </div>
@@ -42,7 +40,7 @@ const Footer = () => {
                 <ul className='Footer-Menu'>
                   <h4>Main Links</h4>
                   <li>
-                    <Link to='/'>Home</Link>
+                    <Link to='/'>Home </Link>
                   </li>
                   <li>
                     <Link to='/About'>About Us</Link>
@@ -60,20 +58,35 @@ const Footer = () => {
               </div>
             </div>
             <div className='col-md-1 m-auto'>
-              <div className='social-icons'>
-                <img src={require('../../Assets/facebook.png')} alt='' />
-                <img src={require('../../Assets/instagram (1).png')} alt='' />
+              {/* <div className='social-icons'>
+                <img src={require('../../Assets/facebook (1).png')} alt='' />
+                <img src={require('../../Assets/instagram (3).png')} alt='' />
                 <img src={require('../../Assets/youtube.png')} alt='' />
-                <img src={require('../../Assets/whatsapp.png')} alt='' />
-              </div>
+                <img src={require('../../Assets/whatsapp (1).png')} alt='' />
+              </div> */}
             </div>
             <div className='col-md-3 m-auto'>
               <div className='jpu-logo'>
                 <img
                   src={require('../../Assets/JPU_Logo.png')}
                   className='img-fluid'
+                  width='50%'
                   alt=''
                 />
+                <div className='social-icons'>
+                  <img src={require('../../Assets/facebook (1).png')} alt='' />
+                  <img src={require('../../Assets/instagram (3).png')} alt='' />
+                  <img src={require('../../Assets/youtube.png')} alt='' />
+                  <a
+                    href='https://wa.me/917498683100?text=hello%2C%20%0AI%20am%20interested%20in%20Shiv%20Paradise%20Please%20Share%20me%20More%20Details'
+                    target='_blank'
+                    rel='noreferrer'>
+                    <img
+                      src={require('../../Assets/whatsapp (1).png')}
+                      alt=''
+                    />
+                  </a>
+                </div>
               </div>
             </div>
           </div>

@@ -42,8 +42,8 @@ const Contact = () => {
                 className='img-fluid mb-3'
               />
               <p style={{ color: 'black' }}>
-                Address :Shiv Paradise, Sahyadri Nagar, Shirgaon, Badlapur,
-                Maharashtra.
+                Address :Shiv Paradise, Near Heaven Bell School, Near Marathon
+                Nagari, Yadav Nagar, Shirgaon, Badlapur, Maharashtra.
               </p>
             </div>
             <div className='col-md-4 m-auto'>
@@ -65,8 +65,8 @@ const Contact = () => {
       <div className='container '>
         <div className='row'>
           <div className='col-md-6 mb-3'>
-            <div className='Enquiry pb-3 pt-3 bg-secondary'>
-              <h2 className='header-style fs-3'>Contact Form</h2>
+            <div className='Enquiry pb-3 pt-3 bg-white'>
+              <h2 className='header-style fs-3 c-form'>Contact Form</h2>
               <div className='enquiry-form'>
                 <form id='contactForm' ref={form} onSubmit={handleSubmit}>
                   <div className='form-group mb-1 text-light'>
@@ -137,10 +137,15 @@ const Contact = () => {
             <div className='border border-primary'>
               <iframe
                 title='map'
+                src='https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3768.90930819408!2d73.228344814214!3d19.155446754449834!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7ed42720c030f%3A0x5685d6da23c7c5fd!2sShiv%20Paradise!5e0!3m2!1sen!2sin!4v1673603511280!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade'
+                width='100%'
+                height='350px'></iframe>
+              {/* <iframe
+                title='map'
                 src='https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d942.1608105179728!2d73.23063772915908!3d19.167087565950762!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be792d50bd7649f%3A0x52c2a1ac5fbba378!2sJpu%20Group!5e0!3m2!1sen!2sin!4v1674720813544!5m2!1sen!2sin" width="600" height="450" style="border:1;"
          allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade'
                 width='100%'
-                height='350px'></iframe>
+                height='350px'></iframe> */}
             </div>
           </div>
         </div>

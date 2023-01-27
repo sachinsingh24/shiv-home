@@ -20,6 +20,6 @@ export const home_carousel = [
   {
     images: require('../../Assets/Sanskar Dham.png'),
     name: 'Sanskar Dham',
-    testimonial: 'Manjarli, Badlapur(Wast)',
+    testimonial: 'Manjarli, Badlapur(West)',
   },
 ];
