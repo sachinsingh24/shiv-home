@@ -195,6 +195,7 @@ const Ongoing = () => {
                   alt=''
                   className='img-fluid'
                 />
+                <span className='isomatrix-tag'>1 BHK</span>
               </div>
               <div className='col-md-6 isomatrix-details'>
                 <div className='layout-details'>
@@ -233,6 +234,7 @@ const Ongoing = () => {
                   alt=''
                   className='img-fluid'
                 />
+                <span className='isomatrix-tag'>2 BHK</span>
               </div>
               <div className='col-md-6 isomatrix-details '>
                 <div className='layout-details'>
@@ -281,9 +283,30 @@ const Ongoing = () => {
           centerMode={false}>
           <div className='elevation py-3'>
             <img src={require('../../../Assets/Grounf Floor.png')} alt='' />
+            <span className='elevation-tag'>
+              <img
+                src={require('../../../Assets/Shiv Paradise logo.png')}
+                className='img-fluid'
+                width='150px'
+                alt=''
+              />
+              <h1 className='elevation-tag-name'> GROUND FlOOR</h1>
+            </span>
           </div>
           <div className='elevation py-3'>
             <img src={require('../../../Assets/First-to-seventh.png')} alt='' />
+            <span className='elevation-tag'>
+              <img
+                src={require('../../../Assets/Shiv Paradise logo.png')}
+                className='img-fluid'
+                width='150px'
+                alt=''
+              />
+              <h1 className='elevation-tag-name'>
+                {' '}
+                1<sup>st</sup> TO 7<sup>th</sup> FlOOR
+              </h1>
+            </span>
           </div>
         </Carousel>
       </div>
