@@ -322,7 +322,7 @@ const Ongoing = () => {
               className='img-fluid'
               alt=''
             />
-            <h3>GARDAN</h3>
+            <h3>GARDEN</h3>
           </div>
           <div className='image-wrap last-wrap-1'>
             <img
@@ -424,6 +424,14 @@ const Ongoing = () => {
                   // rel='noreferrer'
                   download={'shiv Paradise'}>
                   Download Broucher
+                </a>
+                <a
+                  href='https://wa.link/llba5t'
+                  target='_blank'
+                  className='tag-button download'
+                  rel='noreferrer'
+                  download={'shiv Paradise'}>
+                  Book Now
                 </a>
               </div>
             </ul>

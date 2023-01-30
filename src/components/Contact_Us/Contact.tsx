@@ -33,6 +33,7 @@ const Contact = () => {
       <div className='container about_us-p'>
         <div className='contact-brand text-center'>
           <h1>Connect with Us</h1>
+          <p>Contact our team of experts for all your real estate needs.</p>
           <div className='row justify-content-center'>
             <div className='col-md-4 m-auto'>
               <img
