@@ -1,0 +1,30 @@
+/* popup start*/
+.modal-dialog .modal-content{
+  width: 75%;
+  margin: auto;
+}
+.popup-form .form-group{
+  width: 85%;
+  margin: auto;
+}
+.popup-btn{
+  display: flex;
+  justify-content:space-evenly;
+  text-align: center;
+
+}
+.popup-btn .btn{
+/* width: 100%; */
+padding: 7px 20px;
+margin: 10px auto;
+}
+
+/* popup end */
+
+
+@media (max-width: 575.5px) {
+.modal-dialog .modal-content{
+  width: 95%;
+  margin: auto;
+}
+}

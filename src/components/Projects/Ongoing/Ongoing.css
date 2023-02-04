@@ -338,6 +338,11 @@ color: #66d3ce;
   color: rgb(27, 99, 99);
 }
 
+
+
+
+
+
 @media (max-width: 575.5px) {
   .banner-head-ongoing img {
     height: 250px;
@@ -398,6 +403,7 @@ color: #66d3ce;
   .embed-responsive-item iframe {
     pointer-events: all;
   }
+
 }
 @media (min-width: 575.5px) and (max-width: 786px) {
   .content-head {

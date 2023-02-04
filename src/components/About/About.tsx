@@ -31,8 +31,8 @@ const About = () => {
   ];
   return (
     <section className='bg-white about_us-p'>
-      <div className='container '>
-        <div className='text-center'>
+      <div className='container About-tag-sec '>
+        <div className='text-center '>
           <img
             src={require('../../Assets/JPU_Logo.png')}
             alt=''
@@ -61,22 +61,18 @@ const About = () => {
           the group and which the group has proudly embraced as the hallmark of
           identity as a successful developer.
         </p>
-      </div>
-      <div className='container'>
         <h2>A Vision</h2>
         <p>
           At JPU Group, we are dedicated to providing our clients with the
           highest quality real estate services, from start to finish.
         </p>
-      </div>
-      <div className='container'>
         <h2>Mission</h2>
         <p>
           Our mission is to ensure that each project is completed with the
           utmost care and attention to detail.
         </p>
       </div>
-      <h2 className='text-center'>Why Choose Us</h2>
+      <h2 className='text-center mt-3'>Why Choose Us</h2>
       <div className='container col-md-6 mt-3 mb-3'>
         <Accordion allowZeroExpanded>
           {accod.map((item, index) => (

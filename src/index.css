@@ -36,13 +36,14 @@ p{
 
 /* Handle */
 ::-webkit-scrollbar-thumb {
-  background: #29b974;
+  background: #f29b3e;
+
   border-radius: 10px;
 }
 
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
-  background: #f29b3e;
+   background: #29b974;
 }
 html {
   scroll-behavior: smooth;

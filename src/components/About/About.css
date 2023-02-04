@@ -1,6 +1,10 @@
 .about_us-p{
     padding-top: 150px;
 }
-.about_us-p p{
-    color: black;
+
+.About-tag-sec p{
+    color: #666;
+}
+.About-tag-sec h2{
+    color: #2a5778;
 }

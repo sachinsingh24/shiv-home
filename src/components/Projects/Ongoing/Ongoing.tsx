@@ -1,12 +1,15 @@
 /** @format */
 
-import React, { useRef } from 'react';
+import React, { useRef, useState } from 'react';
 import './Ongoing.css';
 import Carousel from 'react-multi-carousel';
 import 'react-multi-carousel/lib/styles.css';
 import emailjs from '@emailjs/browser';
+import Button from 'react-bootstrap/Button';
+import PopupFrom from '../Popup-form/PopupFrom';
 
 const Ongoing = () => {
+  const [modalShow, setModalShow] = useState(false);
   const responsive = {
     superLargeDesktop: {
       breakpoint: { max: 4000, min: 3000 },
@@ -218,11 +221,15 @@ const Ongoing = () => {
                     <li>No Additional GST, Stamp Duty & Ragistration</li>
                   </ul>
                 </div>
-                <a href='https://wa.me/917498683100?text=hello%2C%20%0AI%20am%20interested%20in%20Shiv%20Paradise%2C%20I%20Want%20To%20Schedule%20My%20Site%20Visit.'>
-                  <button className='tag-button schedule'>
-                    Schedule Your Site Visit Now
-                  </button>
-                </a>
+                <Button
+                  className='tag-button schedule'
+                  onClick={() => setModalShow(true)}>
+                  Schedule Your Site Visit Now
+                </Button>
+                <PopupFrom
+                  show={modalShow}
+                  onHide={() => setModalShow(false)}
+                />
               </div>
             </div>
           </div>
@@ -258,11 +265,15 @@ const Ongoing = () => {
                     <li>No Additional GST, Stamp Duty & Ragistration</li>
                   </ul>
                 </div>
-                <a href='https://wa.me/917498683100?text=hello%2C%20%0AI%20am%20interested%20in%20Shiv%20Paradise%2C%20I%20Want%20To%20Schedule%20My%20Site%20Visit.'>
-                  <button className='tag-button schedule'>
-                    Schedule Your Site Visit Now
-                  </button>
-                </a>
+                <Button
+                  className='tag-button schedule'
+                  onClick={() => setModalShow(true)}>
+                  Schedule Your Site Visit Now
+                </Button>
+                <PopupFrom
+                  show={modalShow}
+                  onHide={() => setModalShow(false)}
+                />
               </div>
             </div>
           </div>
@@ -417,14 +428,15 @@ const Ongoing = () => {
                     Dmart Badlapur - <span>4 Km</span>
                   </li>
                 </div>
-                <a
-                  href={require('../../../Assets/shiv-paradise.pdf')}
-                  // target='_blank'
+                <Button
                   className='tag-button download'
-                  // rel='noreferrer'
-                  download={'shiv Paradise'}>
-                  Download Broucher
-                </a>
+                  onClick={() => setModalShow(true)}>
+                  Download brochure
+                </Button>
+                <PopupFrom
+                  show={modalShow}
+                  onHide={() => setModalShow(false)}
+                />
                 <a
                   href='https://wa.link/llba5t'
                   target='_blank'
