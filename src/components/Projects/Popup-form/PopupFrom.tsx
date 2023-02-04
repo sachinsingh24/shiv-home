@@ -34,10 +34,10 @@ const PopupFrom = (props: any) => {
     event.preventDefault();
     emailjs
       .sendForm(
-        'service_ko7o3uo',
-        'template_xk4jqr1',
+        'shivhome_formid',
+        'template_tjqs146',
         form.current,
-        'gL-UD6RKxWqo5JX-b'
+        'gf8rXDhegAr-dVvvL'
       )
       .then(
         (result: any) => {
