@@ -7,6 +7,19 @@ import Modal from 'react-bootstrap/Modal';
 import emailjs from '@emailjs/browser';
 
 const PopupFrom = (props: any) => {
+  // const [selectedOption, setSelectedOption] = useState('1 BHK');
+
+  // const handleOptionChange = (event: React.ChangeEvent<HTMLInputElement>) => {
+  //   setSelectedOption(event.target.value);
+  // };
+  // const [value, setValue] = useState('');
+
+  // const handleChange = (event: React.ChangeEvent<HTMLInputElement>) => {
+  //   setValue(event.target.value);
+  //   console.log(value);
+
+  // onchange(event.target.value);
+  //};
   const [file, setFile] = useState<Blob | null>(null);
 
   const handleClick = async () => {
@@ -61,7 +74,7 @@ const PopupFrom = (props: any) => {
       centered>
       <Modal.Header closeButton>
         <Modal.Title id='contained-modal-title-vcenter'>
-          Please fill out this form to send us a message:
+          Please fill out this form to Schedule your site visit.
         </Modal.Title>
       </Modal.Header>
       <Modal.Body>
@@ -113,13 +126,40 @@ const PopupFrom = (props: any) => {
                   id='mobileError'></small> */}
           </div>
           <div className='form-group mb-1'>
-            <label htmlFor='Description'>Message</label>
-            <textarea
+            <label htmlFor='date'>Prefer Date For Your Site Visit</label>
+            <input
               className='form-control'
-              id='description'
+              id='date'
+              type='date'
               name='message'
-              rows={3}
-              placeholder='Enter Your Message'></textarea>
+              // value={value}
+              // onChange={handleChange}
+            />
+          </div>
+          <div className='form-group mb-1'>
+            <label htmlFor='radio-btn'>Typology required</label>{' '}
+            <div className='form-control radio-wrap'>
+              <div>
+                <label>1 BHK </label>{' '}
+                <input
+                  className='radio-btn'
+                  type='radio'
+                  value='1 BHK'
+                  id='radio-btn'
+                  name='required'
+                  checked
+                />
+              </div>
+              <div>
+                <label>2 BHK </label>{' '}
+                <input
+                  className='radio-btn'
+                  type='radio'
+                  value='2 BHK'
+                  name='required'
+                />
+              </div>
+            </div>
           </div>
           <div className='popup-btn'>
             <Button className='btn btn-secondary' onClick={props.onHide}>

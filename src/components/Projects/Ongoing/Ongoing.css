@@ -30,12 +30,12 @@
   /* pointer-events: none; */
 }
 
-.banner-head-ongoing {
+.banner-head-ShivParadise {
   position: relative;
   z-index: 1;
   margin-bottom: 30px;
 }
-.banner-head-ongoing img {
+.banner-head-ShivParadise img {
   height: auto;
   width: 100%;
 }
@@ -344,7 +344,7 @@ color: #66d3ce;
 
 
 @media (max-width: 575.5px) {
-  .banner-head-ongoing img {
+  .banner-head-ShivParadise img {
     height: 250px;
   }
   .content-head h2 {

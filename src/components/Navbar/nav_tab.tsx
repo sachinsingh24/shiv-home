@@ -58,8 +58,11 @@ const nav_tab = () => {
                         eventKey='3'>
                         Constructed
                       </NavDropdown.Item>
-                      <NavDropdown.Item as={Link} to='/OnGoing' eventKey='4'>
-                        Ongoing
+                      <NavDropdown.Item
+                        as={Link}
+                        to='/ShivParadise'
+                        eventKey='4'>
+                        Shiv Paradise
                       </NavDropdown.Item>
                     </NavDropdown>
                     <Nav.Link as={Link} to='/Contact' eventKey='5'>

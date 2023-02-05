@@ -82,7 +82,7 @@ const Home = () => {
                 className='img-fluid'
               />
               <h2 className='pt-3 pb-3'>Experience The Paradise life</h2>
-              <Link to='/OnGoing'>
+              <Link to='/ShivParadise'>
                 <button className='tag-button'> Explore Now </button>
               </Link>
             </div>

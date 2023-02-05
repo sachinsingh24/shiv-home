@@ -19,6 +19,15 @@ padding: 7px 20px;
 margin: 10px auto;
 }
 
+.radio-wrap{
+  display: flex;
+  justify-content: space-evenly;
+}
+.radio-btn{
+/* margin-bottom: 3px; */
+vertical-align: middle;
+}
+
 /* popup end */
 
 

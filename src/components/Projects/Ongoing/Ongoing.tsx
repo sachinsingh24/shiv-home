@@ -8,7 +8,7 @@ import emailjs from '@emailjs/browser';
 import Button from 'react-bootstrap/Button';
 import PopupFrom from '../Popup-form/PopupFrom';
 
-const Ongoing = () => {
+const ShivParadise = () => {
   const [modalShow, setModalShow] = useState(false);
   const responsive = {
     superLargeDesktop: {
@@ -108,7 +108,7 @@ const Ongoing = () => {
           </div>
         </div>
       </div>
-      <div className='banner-head-ongoing'>
+      <div className='banner-head-ShivParadise'>
         <img src={require('../../../Assets/Landing Page.png')} alt='' />
         <div className='content-head'>
           <h2>The Perfect Living Experience</h2>
@@ -533,4 +533,4 @@ const Ongoing = () => {
   );
 };
 
-export default Ongoing;
+export default ShivParadise;

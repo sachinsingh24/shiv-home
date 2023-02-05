@@ -13,7 +13,7 @@ import Footer from './components/Footer/Footer';
 import About from './components/About/About';
 import Contact from './components/Contact_Us/Contact';
 import ProjectCom from './components/Projects/Completed/Completed';
-import ProjectOnGoing from './components/Projects/Ongoing/Ongoing';
+import ShivParadise from './components/Projects/Ongoing/Ongoing';
 import { Routes, Route } from 'react-router-dom';
 
 function App() {
@@ -41,14 +41,14 @@ function App() {
         <Route path='Contact' element={<Contact />} />
         <Route path='Constructed' element={<ProjectCom />} />
         <Route
-          path='OnGoing'
+          path='ShivParadise'
           element={
             <>
               <Particles
                 options={particlesOptions as ISourceOptions}
                 init={particlesInit}
               />{' '}
-              <ProjectOnGoing />
+              <ShivParadise />
             </>
           }
         />
