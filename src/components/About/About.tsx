@@ -34,7 +34,7 @@ const About = () => {
       <div className='container About-tag-sec '>
         <div className='text-center '>
           <img
-            src={require('../../Assets/JPU_Logo.png')}
+            src={require('../../Assets/JPU-Logo.png')}
             alt=''
             width='250px'
             className='mb-3'

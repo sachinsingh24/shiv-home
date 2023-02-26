@@ -62,12 +62,12 @@ const Home = () => {
     <section>
       <div className='banner-sec fluid-container '>
         <img
-          src={require('../../Assets/Home.png')}
+          src={require('../../Assets/home-banner_image.jpg')}
           alt=''
           className='desktop-view'
         />
         <img
-          src={require('../../Assets/Mobile View.png')}
+          src={require('../../Assets/Mobile-View.jpg')}
           alt=''
           className='mobile-view d-none'
         />
@@ -89,7 +89,6 @@ const Home = () => {
           </div>
         </div>
       </div>
-
       <div className='funfacts-inner container'>
         <div className='row p-3'>
           <div className='col-lg-5 col-5 col-sm-5 contain-border'>
@@ -192,7 +191,7 @@ const Home = () => {
         <div className='home-about-sec'>
           <div className='home-about-img'>
             <img
-              src={require('../../Assets/About us.png')}
+              src={require('../../Assets/About-us.jpg')}
               alt='About-us'
               className='img-fluid'
             />
@@ -201,7 +200,11 @@ const Home = () => {
                 <p className='Shiv_tag'>
                   Great Things Never Come <br /> From Comfort Zones
                 </p>
-
+                <img
+                  src={require('../../Assets/JPU-Logo.png')}
+                  className='img-fluid'
+                  alt=''
+                />
                 <Link to='/About'>
                   <button className='tag-button shiv-btn'>About Us</button>
                 </Link>

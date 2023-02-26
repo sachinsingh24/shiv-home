@@ -109,7 +109,7 @@ const ShivParadise = () => {
         </div>
       </div>
       <div className='banner-head-ShivParadise'>
-        <img src={require('../../../Assets/Landing Page.png')} alt='' />
+        <img src={require('../../../Assets/Landing-Page.jpg')} alt='' />
         <div className='content-head'>
           <h2>The Perfect Living Experience</h2>
           <p>
@@ -142,35 +142,35 @@ const ShivParadise = () => {
           centerMode={false}>
           <div className='elevation-1'>
             <img
-              src={require('../../../Assets/Front Elevation.png')}
+              src={require('../../../Assets/Front-Elevation.jpg')}
               alt=''
               className='img-fluid'
             />
           </div>
           <div className='elevation-1'>
             <img
-              src={require('../../../Assets/Gate Elevation.png')}
+              src={require('../../../Assets/Gate-Elevation.jpg')}
               alt=''
               className='img-fluid'
             />
           </div>
           <div className='elevation-1'>
             <img
-              src={require('../../../Assets/Inside Elevation.png')}
+              src={require('../../../Assets/Inside-Elevation.jpg')}
               alt=''
               className='img-fluid'
             />
           </div>
           <div className='elevation-1'>
             <img
-              src={require('../../../Assets/Side Elevation.png')}
+              src={require('../../../Assets/Side_Elevation.jpg')}
               alt=''
               className='img-fluid'
             />
           </div>
           <div className='elevation-1'>
             <img
-              src={require('../../../Assets/Top Elevation.png')}
+              src={require('../../../Assets/Top-Elevation.jpg')}
               alt=''
               className='img-fluid'
             />
@@ -194,7 +194,7 @@ const ShivParadise = () => {
             <div className='row'>
               <div className='col-md-6 isomatrix'>
                 <img
-                  src={require('../../../Assets/1 BHK.png')}
+                  src={require('../../../Assets/1-BHK.jpg')}
                   alt=''
                   className='img-fluid'
                 />
@@ -237,7 +237,7 @@ const ShivParadise = () => {
             <div className='row'>
               <div className='col-md-6 isomatrix'>
                 <img
-                  src={require('../../../Assets/2 BHK.png')}
+                  src={require('../../../Assets/2-BHK.jpg')}
                   alt=''
                   className='img-fluid'
                 />
@@ -293,7 +293,7 @@ const ShivParadise = () => {
           keyBoardControl={false}
           centerMode={false}>
           <div className='elevation py-3'>
-            <img src={require('../../../Assets/Grounf Floor.png')} alt='' />
+            <img src={require('../../../Assets/Ground-Floor.jpg')} alt='' />
             <span className='elevation-tag'>
               <img
                 src={require('../../../Assets/Shiv Paradise logo.png')}
@@ -305,7 +305,7 @@ const ShivParadise = () => {
             </span>
           </div>
           <div className='elevation py-3'>
-            <img src={require('../../../Assets/First-to-seventh.png')} alt='' />
+            <img src={require('../../../Assets/first-to-seventh.jpg')} alt='' />
             <span className='elevation-tag'>
               <img
                 src={require('../../../Assets/Shiv Paradise logo.png')}

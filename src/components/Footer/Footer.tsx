@@ -68,7 +68,7 @@ const Footer = () => {
             <div className='col-md-3 m-auto'>
               <div className='jpu-logo'>
                 <img
-                  src={require('../../Assets/JPU_Logo.png')}
+                  src={require('../../Assets/JPU Logo white.png')}
                   className='img-fluid'
                   width='50%'
                   alt=''

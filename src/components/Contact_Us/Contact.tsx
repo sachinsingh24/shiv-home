@@ -49,7 +49,7 @@ const Contact = () => {
             </div>
             <div className='col-md-4 m-auto'>
               <img
-                src={require('../../Assets/JPU_Logo.png')}
+                src={require('../../Assets/JPU-Logo.png')}
                 alt=''
                 width='250px'
                 className='img-fluid mb-3'

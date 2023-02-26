@@ -10,7 +10,7 @@ import {
   Container,
 } from 'react-bootstrap';
 import './nav-tab.css';
-import logo from '../../Assets/JPU_Logo.png';
+import logo from '../../Assets/JPU-Logo.png';
 import { Link } from 'react-router-dom';
 
 const nav_tab = () => {
