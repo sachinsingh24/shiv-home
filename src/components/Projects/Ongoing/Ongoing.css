@@ -1,7 +1,5 @@
 /** @format */
 
-
-
 /* #myVideo {
   position: relative;
   right: 0;
@@ -131,32 +129,31 @@
   width: 100%;
   height: 100%;
 }
-.elevation{
+.elevation {
   position: relative;
 }
-.elevation-tag{
-
+.elevation-tag {
   position: absolute;
   top: 10%;
   left: 5%;
 }
-.elevation-tag img{
+.elevation-tag img {
   width: 250px;
   margin-bottom: 10px;
 }
-.elevation-tag h1{
+.elevation-tag h1 {
   font-size: 35px;
 }
-.isomatrix{
+.isomatrix {
   position: relative;
 }
-.isomatrix-tag{
-position: absolute;
-top: 10%;
-left: 10%;
-font-size: 45px;
-font-weight: 700;
-color: #66d3ce;
+.isomatrix-tag {
+  position: absolute;
+  top: 10%;
+  left: 10%;
+  font-size: 45px;
+  font-weight: 700;
+  color: #66d3ce;
 }
 .isomatrix img {
   width: 100%;
@@ -169,7 +166,7 @@ color: #66d3ce;
   flex-direction: column;
   justify-content: space-around;
 }
-.layout-details-head{
+.layout-details-head {
   font-size: 30px;
   font-weight: 600;
 }
@@ -245,7 +242,7 @@ color: #66d3ce;
 .Amenities-1 .image-wrap::before {
   content: '';
   position: absolute;
-  background:#66d3ce;
+  background: #66d3ce;
   top: 30px;
   bottom: 30px;
   left: 0;
@@ -323,7 +320,7 @@ color: #66d3ce;
   max-width: 75%;
   margin: auto;
   margin-top: 20px;
-      border-radius: 20px;
+  border-radius: 20px;
 }
 
 .enquiry-form {
@@ -337,11 +334,6 @@ color: #66d3ce;
   font-weight: 600;
   color: rgb(27, 99, 99);
 }
-
-
-
-
-
 
 @media (max-width: 575.5px) {
   .banner-head-ShivParadise img {
@@ -358,16 +350,16 @@ color: #66d3ce;
     line-height: 7.5px;
     margin-bottom: 6px;
   }
-  .elevation-tag{
+  .elevation-tag {
     left: 5%;
   }
-  .elevation-tag img{
-  width: 100px;
-  margin-bottom: 5px;
-}
-.elevation-tag h1{
-  font-size: 10px;
-}
+  .elevation-tag img {
+    width: 100px;
+    margin-bottom: 5px;
+  }
+  .elevation-tag h1 {
+    font-size: 10px;
+  }
   .rera-wrap {
     margin-top: 0;
   }
@@ -384,14 +376,14 @@ color: #66d3ce;
     left: calc(100% - 6px);
     right: 0;
   }
-  .layout-details .layout-details-head  {
+  .layout-details .layout-details-head {
     font-size: 25px;
     padding: 10px 0;
   }
-  .layout-details li{
+  .layout-details li {
     font-size: 18px;
   }
-  .layout-details-head{
+  .layout-details-head {
     text-align: center;
     font-size: 25px;
     margin-top: 10px;
@@ -408,23 +400,23 @@ color: #66d3ce;
   .embed-responsive-item iframe {
     pointer-events: all;
   }
-  .header-style{
+  .header-style {
     font-size: 30px;
   }
-  .locality ul{
+  .locality ul {
     padding: 0;
   }
-  .locality ul li{
+  .locality ul li {
     font-size: 15px;
-
   }
-  .location-wrap{
+  .location-wrap {
     width: 80%;
-    margin:auto;
+    margin: auto;
     padding: 0;
-
   }
-
+  .react-multiple-carousel__arrow {
+    top: 35%;
+  }
 }
 @media (min-width: 575.5px) and (max-width: 786px) {
   .content-head {
