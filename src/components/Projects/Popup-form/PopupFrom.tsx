@@ -131,7 +131,7 @@ const PopupFrom = (props: any) => {
               className='form-control'
               id='date'
               type='date'
-              name='message'
+              name='Date'
               // value={value}
               // onChange={handleChange}
             />

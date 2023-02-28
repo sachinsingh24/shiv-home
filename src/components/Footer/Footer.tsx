@@ -22,11 +22,14 @@ const Footer = () => {
           <div className='row'>
             <div className='col-md-4 m-auto mb-3'>
               <div className='footer-logo'>
-                <img
-                  src={require('../../Assets/Shiv Logo.png')}
-                  className='img-fluid'
-                  alt=''
-                />
+                <Link to='/'>
+                  {' '}
+                  <img
+                    src={require('../../Assets/Shiv Logo.png')}
+                    className='img-fluid'
+                    alt=''
+                  />
+                </Link>
               </div>
               <div className='address'>
                 <h4>
@@ -67,12 +70,14 @@ const Footer = () => {
             </div>
             <div className='col-md-3 m-auto'>
               <div className='jpu-logo'>
-                <img
-                  src={require('../../Assets/JPU Logo white.png')}
-                  className='img-fluid'
-                  width='50%'
-                  alt=''
-                />
+                <Link to='/'>
+                  <img
+                    src={require('../../Assets/JPU Logo white.png')}
+                    className='img-fluid'
+                    width='50%'
+                    alt=''
+                  />
+                </Link>
                 <div className='social-icons'>
                   <img src={require('../../Assets/facebook.png')} alt='' />
                   <img src={require('../../Assets/instagram.png')} alt='' />

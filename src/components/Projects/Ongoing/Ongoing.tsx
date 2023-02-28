@@ -387,7 +387,7 @@ const ShivParadise = () => {
               <p className='highlight-tag'>
                 Shiv Paradise is in a location where everything is accessible.
               </p>
-              <div className='row'>
+              <div className='row location-wrap'>
                 <div className='col-md-6'>
                   <li>
                     Heaven Bell School - <span>0 Km</span>
